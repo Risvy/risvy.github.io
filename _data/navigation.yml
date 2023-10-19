@@ -17,6 +17,16 @@ main:
     
   - title: "CV"
     url: /files/CV_Muhid Hassan Risvy.pdf
-    
+
+   - title: "Projects"
+     url: Projects\projects.md
+
+    - title: "Accomplishments"
+      url: Accomplishments\accomplishments.md
+
+    - title: "Skills"
+      url: Skills\skills.md
+
+
   # - title: "Guide"
   #   url: /markdown/
