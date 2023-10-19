@@ -1,85 +1,33 @@
-<!-- ---
-title: "Talk 1 on Relevant Topic in Your Field"
-collection: talks
-type: "Talk"
-permalink: /talks/2012-03-01-talk-1
-venue: "UC San Francisco, Department of Testing"
-date: 2012-03-01
-location: "San Francisco, California"
---- -->
-<!-- FILEPATH: /g:/EDUCATION/Personal Website/risvy.github.io/Projects/projects.md -->
----
-## Selected Projects
+    ## Selected Projects
 
-1. **COVID-19 Vaccine Supply Chain**
+    1. **COVID-19 Vaccine Supply Chain**
 
-    A blockchain project implementing a private blockchain-powered supply chain to establish end-to-end traceability for the COVID-19 vaccine, while guaranteeing secure distribution and transportation.
+        A blockchain project implementing a private blockchain-powered supply chain to establish end-to-end traceability for the COVID-19 vaccine, while guaranteeing secure distribution and transportation.
 
-    Technology: Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB.
+        Technology: Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB.
 
-    - GitHub Link: [https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project)
+        - GitHub Link: https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project
 
-2. **Text Summarization**
+    2. **Text Summarization**
 
-    A machine learning project that summarizes Bangla language using unsupervised learning where users can get both abstractive and extractive summaries of their input text.
+        A machine learning project that summarizes Bangla language using unsupervised learning where users can get both abstractive and extractive summaries of their input text.
 
-    Technology: Python.
+        Technology: Python.
 
-    - GitHub Link: [https://github.com/Risvy/Bangla-Text-and-Document-Summarizer](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer)
+        - GitHub Link: https://github.com/Risvy/Bangla-Text-and-Document-Summarizer
 
-3. **E-commerce & Bank**
+    3. **E-commerce & Bank**
 
-    API-based website to simulate the functionalities of e-commerce services among 3 different organizations i.e., Customer, Supplier, and a Bank for instant transactions.
+        API-based website to simulate the functionalities of e-commerce services among 3 different organizations i.e., Customer, Supplier, and a Bank for instant transactions.
 
-    Technology: Node.js, Express.js, MongoDB.
+        Technology: Node.js, Express.js, MongoDB.
 
-    - GitHub Link: [https://github.com/Risvy/API-Project-Ecommerce-](https://github.com/Risvy/API-Project-Ecommerce-)
+        - GitHub Link: https://github.com/Risvy/API-Project-Ecommerce-
 
-4. **SUST CSE Community**
+    4. **SUST CSE Community**
 
-    A social networking Android app that connects current students with the alumni of CSE dept, SUST. Students can search using the alumni’s name, batch, or current workplace.
+        A social networking Android app that connects current students with the alumni of CSE dept, SUST. Students can search using the alumni’s name, batch, or current workplace.
 
-    Technology: Android Studio, Java.
+        Technology: Android Studio, Java.
 
-    - GitHub Link: [https://github.com/Risvy/SUST-CSE-Community](https://github.com/Risvy/SUST-CSE-Community)
----
-
-    <!-- FILEPATH: /g:/EDUCATION/Personal Website/risvy.github.io/Projects/projects.md -->
-
-<!-- 
-    <h2>Selected Projects</h2>
-
-    <ol>
-        <li>
-            <strong>COVID-19 Vaccine Supply Chain</strong>
-            <p>A blockchain project implementing a private blockchain-powered supply chain to establish end-to-end traceability for the COVID-19 vaccine, while guaranteeing secure distribution and transportation.</p>
-            <p>Technology: Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB.</p>
-            <ul>
-                <li>GitHub Link: <a href="https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project">https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project</a></li>
-            </ul>
-        </li>
-        <li>
-            <strong>Text Summarization</strong>
-            <p>A machine learning project that summarizes Bangla language using unsupervised learning where users can get both abstractive and extractive summaries of their input text.</p>
-            <p>Technology: Python.</p>
-            <ul>
-                <li>GitHub Link: <a href="https://github.com/Risvy/Bangla-Text-and-Document-Summarizer">https://github.com/Risvy/Bangla-Text-and-Document-Summarizer</a></li>
-            </ul>
-        </li>
-        <li>
-            <strong>E-commerce &amp; Bank</strong>
-            <p>API-based website to simulate the functionalities of e-commerce services among 3 different organizations i.e., Customer, Supplier, and a Bank for instant transactions.</p>
-            <p>Technology: Node.js, Express.js, MongoDB.</p>
-            <ul>
-                <li>GitHub Link: <a href="https://github.com/Risvy/API-Project-Ecommerce-">https://github.com/Risvy/API-Project-Ecommerce-</a></li>
-            </ul>
-        </li>
-        <li>
-            <strong>SUST CSE Community</strong>
-            <p>A social networking Android app that connects current students with the alumni of CSE dept, SUST. Students can search using the alumni’s name, batch, or current workplace.</p>
-            <p>Technology: Android Studio, Java.</p>
-            <ul>
-                <li>GitHub Link: <a href="https://github.com/Risvy/SUST-CSE-Community">https://github.com/Risvy/SUST-CSE-Community</a></li>
-            </ul>
-        </li>
-    </ol> -->
+        - GitHub Link: https://github.com/Risvy/SUST-CSE-Community
