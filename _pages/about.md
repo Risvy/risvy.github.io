@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <!-- Embedd a picture here name side_image.jpeg, aligh=right, width = 300px -->
-<img src="/images/side_image.jpeg" align="right" width="300"/>
+<img src="/images/side_image_demo.jpeg" align="right" width="250"/>
 👨‍💻 I'm a recent Graduate from CSE, SUST.
 
 📊 My research interests are in Computer & Cyber Security, Privacy and Blockchain.
