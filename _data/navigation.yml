@@ -19,7 +19,7 @@ main:
     url: /files/CV_Muhid Hassan Risvy.pdf
 
   - title: "Projects"
-    url: projects\projects.md
+    url: /projects/
 
   - title: "Accomplishments"
     url: accomplishments\accomplishments.md
