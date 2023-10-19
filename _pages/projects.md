@@ -5,9 +5,9 @@ permalink: /projects/
 author_profile: true
 ---
 
-{% if author.github %}
+<!-- {% if author.github %}
   You can also find my projects on <u><a href="{{author.github}}">my GitHub profile</a>.</u>
-{% endif %}
+{% endif %} -->
 
 {% include base_path %}
 
