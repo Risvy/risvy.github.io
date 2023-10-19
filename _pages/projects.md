@@ -6,13 +6,14 @@ sidebar:
   nav: "projects"
 ---
 
-## COVID-19 Vaccine Supply Chain
+
+## [COVID-19 Vaccine Supply Chain](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project)
 
 A blockchain project implementing a private blockchain-powered supply chain to establish end-to-end traceability for the COVID-19 vaccine, while guaranteeing secure distribution and transportation.
 
 **Technology:** Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB.
 
-[GitHub Link](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project)
+<!-- [GitHub Link](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project) -->
 
 ## [Text Summarization](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer)
 
@@ -20,7 +21,7 @@ A machine learning project that summarizes Bangla language using unsupervised le
 
 **Technology:** Python.
 
-[GitHub Link](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer)
+<!-- [GitHub Link](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer) -->
 
 ## [E-commerce & Bank](https://github.com/Risvy/API-Project-Ecommerce-)
 
@@ -28,7 +29,7 @@ API-based website to simulate the functionalities of e-commerce services among 3
 
 **Technology:** Node.js, Express.js, MongoDB.
 
-[GitHub Link](https://github.com/Risvy/API-Project-Ecommerce-)
+<!-- [GitHub Link](https://github.com/Risvy/API-Project-Ecommerce-) -->
 
 ## [SUST CSE Community](https://github.com/Risvy/SUST-CSE-Community)
 
@@ -36,4 +37,4 @@ A social networking Android app that connects current students with the alumni o
 
 **Technology:** Android Studio, Java.
 
-[GitHub Link](https://github.com/Risvy/SUST-CSE-Community)
+<!-- [GitHub Link](https://github.com/Risvy/SUST-CSE-Community) -->
