@@ -22,12 +22,12 @@ I'm very much passionate about writing codes, learning, and building new things.
 In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience about public speaking and also had the opportunity to lead some teams in mentionable debate competitions.
 
 # 🔬 Undergraduate Thesis
-## Title: Security Analysis of Software-Based Cryptocurrency Wallets
+**Title:** Security Analysis of Software-Based Cryptocurrency Wallets.
 **Short Description:** The goal of this thesis is to find the security vulnerabilities of cryptocurrency wallets as well as to get an overall idea about the privacy and permissions they ask from their users. Our methods focuses on using vulnerability assessment tools and user reviews to identify the factors that contribute to their perceived security and usability. Both manual and Machine Learning approaches were taken to analyze the user reviews for determining how well they can keep cryptos safe and accessible. This work is in the process of publishing. I was fortunate to work with [Dr. Jabed Morshed Chowdhury](https://scholar.google.com/citations?user=n3jMWFQAAAAJ&hl=en&oi=ao) and [Dr. Sadek Ferdous Ripul](https://scholar.google.com/citations?user=DnQAee0AAAAJ&hl=en&oi=ao) as my thesis supervisors.
 
 # 🎒 Standardized Tests
-- **GRE:** Quant: 160, V: 144 AWA: 3.5
-- **TOEFL:** (Will take soon)
+- *GRE* Quant: 160, V: 144 AWA: 3.5
+- *TOEFL* (Will take soon)
 
 # 🖥️ Hackathons 
 1. HackNSU 2019, North South University

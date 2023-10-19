@@ -85,8 +85,10 @@ author:
   bio              : "CS Graduate (2023) @ SUST"
   location         : "Bangladesh"
   # 
-  employer         : "SUST"
-  # employer         :  "Shahjalal University of Science and Technology"
+  # employer         : "SUST"
+  employer         :  "Shahjalal University of 
+  <br> 
+  Science and Technology"
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    :  # "http://yourfullgooglescholarurl.com"
   email            : "hassan.risvy1@gmail.com"
