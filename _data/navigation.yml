@@ -22,7 +22,7 @@ main:
     url: Projects\projects.md
 
   - title: "Accomplishments"
-    url: Accomplishments\accomplishments.md
+    url: accomplishments\accomplishments.html
 
   - title: "Skills"
     url: Skills\skills.md
