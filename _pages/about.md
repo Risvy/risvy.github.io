@@ -16,7 +16,7 @@ redirect_from:
 
 📚 Looking for PhD opportunities in CS for Fall '24.
 
-# 🙋‍♂️ More About Me
+#🙋‍♂️More About Me
 I'm very much passionate about writing codes, learning, and building new things. I love to solve complex problems, take challenges & enjoy getting the job done. Always curious to learn. Always excited to work as a team. Our team was two times finalist in the Blockchain Olympiad Bangladesh (2021 & 2022). I had the opportunity to code and develop some exciting projects in recent years. 
 
 In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience about public speaking and also had the opportunity to lead some teams in mentionable debate competitions.
