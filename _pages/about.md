@@ -46,13 +46,10 @@ In addition to academic activities, I love to take part in sports. I have been a
 | Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  | -->
 
 <table align="center">
-   <thead>
-      <tr>
-         <th align="center">Sports</th>
-         <th align="center">Achievement</th>
-      </tr>
-   </thead>
    <tbody>
+      <tr>
+         <th align="center"><b>Sports</b></th>
+         <th align="center"><b>Achievement</b></th>
       <tr>
          <td align="center">Football</td>
          <td align="center">Champion (2019), Runners-Up (2022), SUST Intra IICT Tournament</td>
