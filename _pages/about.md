@@ -37,15 +37,40 @@ In addition to academic activities, I love to take part in sports. I have been a
 
 # 🤾‍♂️ Extra Curricular Activities
 
-### Sports
-| Sports      | Achievement                                                       |
-|-------------|-------------------------------------------------------------------|
-| Soccer      | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)    |
-| Table Tennis| Runners-Up, 2022 (SUST Intra Dept. Tournament)                    |
-| Handball    | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)|
-### Photography
+## Sports
+| Sports       | Achievement                                                         |
+|--------------|---------------------------------------------------------------------|
+| Soccer       | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)        |
+| Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                        |
+| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)    |
+
+## Photography
 My captured photographs were showcased as part of an exhibition at a university competition in 2023.
-### Debate 
+[]: # BEGIN: 8d9f7c5f8c7a
+
+Click the button below to reveal my photos.
+
+<img src="/images/exhibition_1.jpg" alt="Placeholder Image" width="300">
+
+<button id="reveal-button" onclick="revealPhotos()">Reveal Photos</button>
+
+<div id="photos" style="display: none;">
+   <img src="/images/exhibition_2.jpg" alt="Photo 1" width="300">
+   <img src="/images/exhibition_3.jpg" alt="Photo 2" width="300">
+   <img src="/images/exhibition_4.jpg" alt="Photo 3" width="300">
+</div>
+
+<script>
+function revealPhotos() {
+   var button = document.getElementById("reveal-button");
+   var photos = document.getElementById("photos");
+   button.style.display = "none";
+   photos.style.display = "block";
+}
+</script>
+[]: # END: 8d9f7c5f8c7a
+
+## Debate 
 I led a debate team that participated in several district-level competitions during high school.
 # 📫 How to reach me
 **Email:** hassan.risvy1@gmail.com

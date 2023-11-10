@@ -7,8 +7,10 @@ permalink: /accomplishments/
 ## Finalist | Blockchain Olympiad Bangladesh 2022
 I led a team that developed a Blockchain application that can be used as a model to respond quickly during global pandemics like COVID-19.
 
-<img src="/images/BCOLBD.png" align="center" width=650px/>
-<p style="text-align:center; font-style:italic;">Coverage of our project by BBC News, June 2022.</p>
+<div style="text-align:center;">
+    <img src="/images/BCOLBD.png" align="center" width=650px/>
+    <p style="font-style:italic;">Coverage of our project by BBC News, June 2022.</p>
+</div>
 
 
 ## Finalist | Blockchain Olympiad Bangladesh 2021
