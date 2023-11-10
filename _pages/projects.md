@@ -13,6 +13,8 @@ A blockchain project implementing a private blockchain-powered supply chain to e
 
 **Technology:** Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB.
 
+<a href="https://risvy.github.io/accomplishments/">Showcased in BCOLBD 2022</a>
+
 <!-- [GitHub Link](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project) -->
 
 ## [Text Summarization](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer)
@@ -20,8 +22,6 @@ A blockchain project implementing a private blockchain-powered supply chain to e
 A machine learning project that summarizes Bangla language using unsupervised learning where users can get both abstractive and extractive summaries of their input text.
 
 **Technology:** Python.
-
-<!-- [GitHub Link](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer) -->
 
 ## [E-commerce & Bank](https://github.com/Risvy/API-Project-Ecommerce-)
 

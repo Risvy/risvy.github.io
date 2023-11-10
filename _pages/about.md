@@ -40,35 +40,75 @@ In addition to academic activities, I love to take part in sports. I have been a
 ## Sports
 | Sports       | Achievement                                                         |
 |--------------|---------------------------------------------------------------------|
-| Soccer       | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)        |
-| Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                        |
-| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)    |
+| Soccer       | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)      |
+| Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                      |
+| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  |
+
+<!-- 
+| Sport       | Achievement                                          |
+|-------------|------------------------------------------------------|
+| Football    | Champion, SUST Intra IICT Tournament, 2019           |
+| Table Tennis| Runners-Up, SUST Intra-Department Tournament, 2022   |
+| Handball    | SUST Inter-Department Tournament, 2018, 2019, 2022   |
+ -->
 
 ## Photography
 My captured photographs were showcased as part of an exhibition at a university competition in 2023.
-[]: # BEGIN: 8d9f7c5f8c7a
+Click here to see the photos ->  
+<button onclick="togglePhotos()">Show Photos</button>
 
-Click the button below to reveal my photos.
-
-<img src="/images/exhibition_1.jpg" alt="Placeholder Image" width="300">
-
-<button id="reveal-button" onclick="revealPhotos()">Reveal Photos</button>
-
-<div id="photos" style="display: none;">
-   <img src="/images/exhibition_2.jpg" alt="Photo 1" width="300">
-   <img src="/images/exhibition_3.jpg" alt="Photo 2" width="300">
-   <img src="/images/exhibition_4.jpg" alt="Photo 3" width="300">
+<div class="photo-grid" id="photo-grid" style="display:none">
+   <div class="photo-item">
+      <img src="/images/exhibition_1.jpg" alt="Photo 1">
+   </div>
+   <div class="photo-item">
+      <img src="/images/exhibition_2.jpg" alt="Photo 2">
+   </div>
+   <div class="photo-item">
+      <img src="/images/exhibition_3.jpg" alt="Photo 3">
+   </div>
+   <div class="photo-item">
+      <img src="/images/exhibition_4.jpg" alt="Photo 4">
+   </div>
 </div>
 
+<style>
+.photo-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 10px;
+}
+
+.photo-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-item img {
+   max-width: 100%;
+   height: auto;
+   transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+   transform: scale(1.1);
+}
+</style>
+
 <script>
-function revealPhotos() {
-   var button = document.getElementById("reveal-button");
-   var photos = document.getElementById("photos");
-   button.style.display = "none";
-   photos.style.display = "block";
+function togglePhotos() {
+   var x = document.getElementById("photo-grid");
+   if (x.style.display === "none") {
+      x.style.display = "grid";
+   } else {
+      x.style.display = "none";
+   }
 }
 </script>
-[]: # END: 8d9f7c5f8c7a
 
 ## Debate 
 I led a debate team that participated in several district-level competitions during high school.
