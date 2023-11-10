@@ -38,6 +38,16 @@ In addition to academic activities, I love to take part in sports. I have been a
 # 🤾‍♂️ Extra Curricular Activities
 
 ## Sports
+
+
+| Sports       | Achievement                                                         |
+|:-------------:|:-------------------------------------------------------------------:|
+| Soccer       | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)      |
+| Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                      |
+| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  |
+
+
+
 <!-- 
 | Sports       | Achievement                                                         |
 |--------------|---------------------------------------------------------------------|
@@ -45,11 +55,11 @@ In addition to academic activities, I love to take part in sports. I have been a
 | Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                      |
 | Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  | -->
 
-<table align="center">
+<!-- <table align="center">
    <tbody>
       <tr>
-         <th align="center"><b>Sports</b></th>
-         <th align="center"><b>Achievement</b></th>
+         <th align="center">Sports</th>
+         <th align="center">Achievement</th>
       <tr>
          <td align="center">Football</td>
          <td align="center">Champion (2019), Runners-Up (2022), SUST Intra IICT Tournament</td>
@@ -63,7 +73,7 @@ In addition to academic activities, I love to take part in sports. I have been a
          <td align="center">Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)</td>
       </tr>
    </tbody>
-</table>
+</table> -->
 
 
 ## Photography
