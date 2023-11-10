@@ -31,18 +31,22 @@ In addition to academic activities, I love to take part in sports. I have been a
 
 # 🖥️ Hackathons 
 1. HackNSU 2019, North South University
-   - Our Team developed a tech-business model called ‘Digital House Renting’ which can solve the house renting problem in urban areas.
+   - I led a team that developed a tech-business model called ‘Digital House Renting’ which can solve the house renting problem in urban areas.
 2. National Hackathon Competition 2019, Leading University
    - Our Team developed a student-teacher management mobile application to interact easily between teachers and students.
 
 # 🤾‍♂️ Extra Curricular Activities
 
-| Sport       | Achievement                                          |
-|-------------|------------------------------------------------------|
-| Football    | Champion, SUST Intra IICT Tournament, 2019           |
-| Table Tennis| Runners-Up, SUST Intra-Department Tournament, 2022   |
-| Handball    | SUST Inter-Department Tournament, 2018, 2019, 2022   |
-
+### Sports
+| Sports      | Achievement                                                       |
+|-------------|-------------------------------------------------------------------|
+| Soccer      | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)    |
+| Table Tennis| Runners-Up, 2022 (SUST Intra Dept. Tournament)                    |
+| Handball    | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)|
+### Photography
+My captured photographs were showcased as part of an exhibition at a university competition in 2023.
+### Debate 
+I led a debate team that participated in several district-level competitions during high school.
 # 📫 How to reach me
 **Email:** hassan.risvy1@gmail.com
 
