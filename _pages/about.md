@@ -38,24 +38,25 @@ In addition to academic activities, I love to take part in sports. I have been a
 # 🤾‍♂️ Extra Curricular Activities
 
 ## Sports
+<!-- 
 | Sports       | Achievement                                                         |
 |--------------|---------------------------------------------------------------------|
 | Soccer       | Champion, 2019; Runners-Up, 2022; (SUST Intra IICT Tournament)      |
 | Table Tennis | Runners-Up, 2022 (SUST Intra Dept. Tournament)                      |
-| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  |
+| Handball     | Played and Managed, 2018, 2019, 2022 (SUST Inter Dept. Tournament)  | -->
 
-<!-- 
+
 | Sport       | Achievement                                          |
 |-------------|------------------------------------------------------|
 | Football    | Champion, SUST Intra IICT Tournament, 2019           |
 | Table Tennis| Runners-Up, SUST Intra-Department Tournament, 2022   |
 | Handball    | SUST Inter-Department Tournament, 2018, 2019, 2022   |
- -->
+
 
 ## Photography
-My captured photographs were showcased as part of an exhibition at a university competition in 2023.
-Click here to see the photos ->  
-<button onclick="togglePhotos()">Show Photos</button>
+My captured photographs were showcased as part of an exhibition at a university competition in 2023.<br>
+*Click here to reveal some of the selected photos:*
+<button onclick="togglePhotos()">Reveal Photos</button>
 
 <div class="photo-grid" id="photo-grid" style="display:none">
    <div class="photo-item">
