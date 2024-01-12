@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋Hello I'm Risvy!"
+title: "Muhid Hassan Risvy"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,10 +9,10 @@ redirect_from:
 ---
 
 <!-- Embedd a picture here name side_image.jpeg, aligh=right, width = 300px -->
-<img src="/images/side_image_demo.jpeg" align="right" width="250"/>
+<!-- <img src="/images/side_image_demo.jpeg" align="right" width="250"/>  -->
 👨‍💻 I'm a recent Graduate from CSE, SUST.
 
-📊 My research interests are in Computer & Cyber Security, Privacy and Blockchain.
+📊 My research interests are in Computer & Cyber Security, Privacy, and Blockchain.
 
 📚 Looking for PhD opportunities in CS for Fall '24.
 
