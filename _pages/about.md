@@ -10,11 +10,11 @@ redirect_from:
 
 <!-- Embedd a picture here name side_image.jpeg, aligh=right, width = 300px -->
 <!-- <img src="/images/side_image_demo.jpeg" align="right" width="250"/>  -->
-👨‍💻 I'm a CS PhD student at New Jersey Institute of Technology.
+👨‍💻 I'm a Computer Science PhD student at New Jersey Institute of Technology.
 
-📊 My research interests are in Computer & Cyber Security, Privacy, and Blockchain.
+📊 My research interests are Cybersecurity and Blockchain. My supervisor is [Dr. Reza Curtmola](https://scholar.google.com/citations?user=mS1VzxkAAAAJ&hl=en).
 
-📚 I will be working as a Teaching Assistant at NJIT for the Fall '24 and Spring '25 sessions.
+📚 Currently, I am a Teaching Assistant at NJIT. 
 
 # 🙋‍♂️ More About Me
 I'm a CS PhD student at New Jersey Institute of Technology. My research interest is Computer Security. I'm very much passionate about writing codes, learning, and building new things. I love to solve complex problems, take challenges & enjoy getting the job done. Always curious to learn. 
@@ -134,5 +134,5 @@ function togglePhotos() {
 ## Debate 
 I led a debate team that participated in several district-level competitions during high school.
 # 📫 How to reach me
-**Email:** hassan.risvy1@gmail.com
+**Email:** mr2229@njit.edu
 
