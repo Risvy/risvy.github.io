@@ -4,9 +4,6 @@ title: "Experience"
 permalink: /experience/
 author_profile: true
 ---
-
-## Experience
-
 ### Teaching Assistant
 
 **Course:** CS 351 – Introduction to Cybersecurity
