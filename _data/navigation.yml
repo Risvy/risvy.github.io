@@ -27,6 +27,12 @@ main:
   - title: "Skills"
     url: /skills/
 
+  - title: "Experience"
+    url: /experience/
+
+  - title: "News"
+    url: /news/
+
 
   # - title: "Guide"
   #   url: /markdown/
