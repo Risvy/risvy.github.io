@@ -10,16 +10,16 @@ redirect_from:
 
 <!-- Embedd a picture here name side_image.jpeg, aligh=right, width = 300px -->
 <!-- <img src="/images/side_image_demo.jpeg" align="right" width="250"/>  -->
-👨‍💻 I'm a Computer Science PhD student at New Jersey Institute of Technology.
+I'm a Computer Science PhD student at New Jersey Institute of Technology.
 
-📊 My research interests are Cybersecurity and Blockchain. 
+My research interests are Cybersecurity, Usable Security and HCI. 
 
-📚 Currently, I am a Teaching Assistant at NJIT. 
+Currently, I am a Teaching Assistant at NJIT. 
 
-# 🙋‍♂️ More About Me
-I'm a CS PhD student at New Jersey Institute of Technology. My research interest is Computer Security. I'm very much passionate about writing codes, learning, and building new things. I love to solve complex problems, take challenges & enjoy getting the job done. Always curious to learn. 
+# More About Me
+I'm a CS PhD student at New Jersey Institute of Technology. My research interest is Computer Security. I'm very passionate about writing code, learning, and building new things. I love to solve complex problems, take on challenges & enjoy getting the job done. Always curious to learn. 
 
-In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience in public speaking and also had the opportunity to lead some teams in mentionable debate competitions.
+In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience in public speaking and also had the opportunity to lead some teams in notable debate competitions.
 
 # 🔬 Undergraduate Thesis
 **Title:** Security Analysis of Software-Based Cryptocurrency Wallets.<br>
