@@ -17,7 +17,7 @@ My research interests are Cybersecurity, Usable Security and HCI.
 Currently, I am a Teaching Assistant at NJIT. 
 
 # More About Me
-I'm a CS PhD student at New Jersey Institute of Technology. My research interest is Computer Security. I'm very passionate about writing code, learning, and building new things. I love to solve complex problems, take on challenges & enjoy getting the job done. Always curious to learn. 
+I'm a CS PhD student at New Jersey Institute of Technology. I'm very passionate about writing code, learning, and building new things. I love to solve complex problems, take on challenges & enjoy getting the job done. Always curious to learn. 
 
 In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience in public speaking and also had the opportunity to lead some teams in notable debate competitions.
 
