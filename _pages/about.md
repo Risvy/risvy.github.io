@@ -21,7 +21,16 @@ I'm a CS PhD student at New Jersey Institute of Technology. I'm very passionate 
 
 In addition to academic activities, I love to take part in sports. I have been an active participant in various types of games and sports from a young age. Besides, I had some experience in public speaking and also had the opportunity to lead some teams in notable debate competitions.
 
-# Undergraduate Thesis
+# Research Experience
+
+## Security Analysis of Passkey
+Currently analyzing how passkeys are saved in users' password managers. I analyzed credential storage security across multiple password managers and found significant metadata leakage and weak encryption techniques which can reveal users' information like login data, URLs visited, timestamps, and other critical data. Moreover, I developed a browser extension that shows compromised or at-risk passkeys for each relying party (website).
+
+## Browser Automation For Improving Security Guides
+Developed an AI-driven system to automatically validate and update security guides from organizations like EFF when platforms change their UI or settings. Built a hybrid local/remote browser automation system using open-source LLM models deployed on HPC clusters. Successfully integrated remote HPC GPU resources with local browser operations and used Playwright for secure web automation.
+
+
+## Undergraduate Thesis
 **Title:** Security Analysis of Software-Based Cryptocurrency Wallets.<br>
 **Short Description:** The goal of this thesis is to find the security vulnerabilities of cryptocurrency wallets as well as to get an overall idea about the privacy and permissions they ask from their users. Our methods focus on using vulnerability assessment tools and user reviews to identify the factors that contribute to their perceived security and usability. Both manual and Machine Learning approaches were taken to analyze the user reviews to determine how well they can keep cryptos safe and accessible. This work is in the process of publishing. I was fortunate to work with [Dr. Jabed Morshed Chowdhury](https://scholar.google.com/citations?user=n3jMWFQAAAAJ&hl=en&oi=ao) and [Dr. Sadek Ferdous Ripul](https://scholar.google.com/citations?user=DnQAee0AAAAJ&hl=en&oi=ao) as my thesis supervisors. **This work is soon to be submitted to the journal [Cybersecurity published by SpringerOpen](https://cybersecurity.springeropen.com/).**
 
