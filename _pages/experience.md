@@ -6,32 +6,19 @@ author_profile: true
 ---
 ### Teaching Assistant
 
-**Course:** CS 351 – Introduction to Cybersecurity
+**Institution:** New Jersey Institute of Technology  
+**Session:** Fall 2024 – Current
 
-**Session:** Fall 2024
+**Courses:**
+- **CS 351** – Introduction to Cybersecurity (Fall 2024)
+- **CS 388** – Android Application Development (Spring 2025)
+- **CS 288** – Intensive Programming in Linux (Summer 2025)
+- **CS 332** – Principles of Operating Systems (Summer 2025)
+- **CS 288** – Intensive Programming in Linux, two sections (Fall 2025)
 
-<!-- 
-- Assisted with course planning, organization, and material preparation.
-- Conducted discussion sections and provided support for students with course materials.
+**Responsibilities**
+
 - Graded assignments, exams, and projects.
+- Conducted discussion sections and provided support for students with course materials.
 - Mentored students and provided academic guidance.
-
-### Research Assistant
-
-**Project:** [Project Title], [Institution/Organization Name]  
-**Session:** [Month, Year] – [Month, Year]
-
-- Conducted research on [brief description of research focus].
-- Collected and analyzed data using [methods/software].
-- Contributed to writing research papers and reports.
-
-### Industry Internship
-
-**Position:** [Job Title], [Company Name]  
-**Session:** [Month, Year] – [Month, Year]
-
-- Collaborated with a team of engineers/developers on [specific project or task].
-- Developed [tools/technologies] to improve [aspect of project].
-- Presented findings and solutions to senior management.
--->
 
