@@ -17,6 +17,14 @@ A blockchain project implementing a private blockchain-powered supply chain to e
 
 <!-- [GitHub Link](https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project) -->
 
+## [Passkey Health Manager](https://github.com/Risvy/Passkey-Health-Manager)
+
+A Chrome extension that manages passkeys with advanced health auditing features to track passkey security, detect weak keys using hash collision detection, monitor share counts, and maintain comprehensive export history.
+
+**Technology:** React, TypeScript, Chrome Extension API.
+
+<!-- [GitHub Link](https://github.com/Risvy/Passkey-Health-Manager) -->
+
 ## [Text Summarization](https://github.com/Risvy/Bangla-Text-and-Document-Summarizer)
 
 A machine learning project that summarizes Bangla language using unsupervised learning where users can get both abstractive and extractive summaries of their input text.
