@@ -12,7 +12,7 @@ redirect_from:
 <!-- <img src="/images/side_image_demo.jpeg" align="right" width="250"/>  -->
 I'm a Computer Science PhD student at New Jersey Institute of Technology.
 
-My research interests are Cybersecurity, Usable Security and HCI. 
+My research interests are Security, Usable Security and Privacy and HCI. 
 
 Currently, I am a Teaching Assistant at NJIT. 
 
