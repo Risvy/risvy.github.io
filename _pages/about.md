@@ -142,6 +142,6 @@ function togglePhotos() {
 
 ## Debate 
 I led a debate team that participated in several district-level competitions during high school.
-# 📫 How to reach me
+# How to reach me
 **Email:** mr2229@njit.edu
 
