@@ -1,14 +1,21 @@
-Personal website v1
+# risvy.github.io
 
-### Organization
-pages-> about.md <br>
-     -> projects.md (and any new section when added)
-images <br>
-data-> navigation.yml <br>
-_config.yml <be>
+Personal academic website of Muhid Hassan Risvy, served by GitHub Pages at
+[risvy.github.io](https://risvy.github.io/).
 
+Hand-written static HTML, CSS, and vanilla JavaScript. No build step, no
+framework, no Jekyll (`.nojekyll` is present).
 
+## Preview locally
 
+```
+python -m http.server 8080
+```
 
-### Show preview
-ctrl+Shift+v
+Then open http://localhost:8080/. A local server is required because the site
+uses root-relative paths (`/assets/...`).
+
+## Updating content
+
+See [MAINTENANCE.md](MAINTENANCE.md) for how to add news items (with photos),
+add publications, and replace the CV.
