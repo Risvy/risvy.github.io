@@ -1,8 +1,8 @@
-/* risvy.github.io | navigation toggle, reveal animation, lightbox, year */
+/* risvy.github.io | navigation toggle, lightbox, year */
 (function () {
   "use strict";
 
-  /* Mobile navigation toggle ------------------------------------------- */
+  /* Mobile navigation toggle */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
 
@@ -29,28 +29,7 @@
     });
   }
 
-  /* Reveal-on-scroll ----------------------------------------------------- */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (reveals.length) {
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      reveals.forEach(function (el) { el.classList.add("is-visible"); });
-    } else {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      reveals.forEach(function (el) { observer.observe(el); });
-    }
-  }
-
-  /* Lightbox -------------------------------------------------------------- */
+  /* Lightbox */
   var links = Array.prototype.slice.call(document.querySelectorAll(".lightbox-link"));
 
   if (links.length && typeof document.createElement("dialog").showModal === "function") {
@@ -94,7 +73,7 @@
     });
   }
 
-  /* Footer year -------------------------------------------------------------- */
+  /* Footer year */
   Array.prototype.slice.call(document.querySelectorAll("[data-year]")).forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
