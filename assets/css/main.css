@@ -12,6 +12,12 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+section[id] { scroll-margin-top: 1rem; }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -22,14 +28,15 @@ body {
 }
 
 h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
   color: var(--ink);
   line-height: 1.25;
   margin: 0 0 0.75rem;
 }
 
-h1 { font-size: 1.875rem; font-weight: 650; }
-h2 { font-size: 1.3125rem; font-weight: 650; }
-h3 { font-size: 1.05rem; font-weight: 600; }
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.4375rem; font-weight: 700; }
+h3 { font-size: 1.125rem; font-weight: 700; }
 
 p { margin: 0 0 1rem; }
 p:last-child { margin-bottom: 0; }
@@ -101,8 +108,9 @@ address { font-style: normal; }
 }
 
 .brand {
-  font-weight: 650;
-  font-size: 1.0625rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
   color: var(--ink);
   text-decoration: none;
   white-space: nowrap;
@@ -130,6 +138,9 @@ address { font-style: normal; }
 .site-nav a[aria-current="page"] {
   color: var(--ink);
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
 }
 
 .nav-toggle {
@@ -193,8 +204,9 @@ address { font-style: normal; }
 }
 
 .sidebar-name {
-  font-weight: 650;
-  font-size: 1.0625rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
   margin: 0.875rem 0 0.125rem;
 }
 
@@ -303,6 +315,16 @@ main .section + .section {
 
 @media (max-width: 559px) {
   .photo-medium img { width: 100%; max-width: 300px; }
+}
+
+/* Featured paper */
+
+.featured-paper {
+  background: #fafaf7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 /* Publications */
