@@ -6,6 +6,8 @@
   <title>Muhid Hassan Risvy</title>
   <meta name="description" content="Ph.D. student in computer science at NJIT working on human-computer interaction, human-AI collaboration, and trust in technologies for aging.">
   <meta name="author" content="Muhid Hassan Risvy">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131416" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://risvy.github.io/">
   <meta property="og:site_name" content="Muhid Hassan Risvy">
   <meta property="og:type" content="website">
@@ -18,6 +20,9 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="/assets/js/main.js" defer></script>
@@ -44,12 +49,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Muhid Hassan Risvy</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
+  <header class="masthead">
+    <div class="page masthead-inner">
+      <a class="wordmark" href="/">Muhid Hassan Risvy</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="/" aria-current="page">Home</a></li>
           <li><a href="/#research">Research</a></li>
           <li><a href="/publications/">Publications</a></li>
@@ -58,108 +63,223 @@
           <li><a href="/activities/">Activities</a></li>
           <li><a href="/cv/">CV</a></li>
         </ul>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </div>
   </header>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <img class="sidebar-photo" src="/images/profile.jpg" alt="Muhid Hassan Risvy" width="640" height="640" fetchpriority="high">
-      <p class="sidebar-name">Muhid Hassan Risvy</p>
-      <p class="sidebar-role">Ph.D. student, Computer Science<br>New Jersey Institute of Technology</p>
-      <ul class="sidebar-links">
-        <li><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></li>
-        <li><a href="https://github.com/Risvy">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a></li>
-        <li><a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a></li>
-      </ul>
-      <address class="sidebar-address">218 Central Ave<br>Newark, NJ 07102</address>
-    </aside>
+  <main id="main">
+    <section class="opening page">
+      <div class="opening-grid">
+        <div class="opening-text">
+          <h1 data-enter style="--d: 0s">Muhid Hassan Risvy</h1>
+          <p class="kicker" data-enter style="--d: 0.08s">Ph.D. student in computer science, New Jersey Institute of Technology</p>
+          <p class="statement" data-enter style="--d: 0.16s">I study how older adults decide whether to trust technologies designed for aging, and what that should change about how we build AI.</p>
+          <ul class="opening-links" data-enter style="--d: 0.24s">
+            <li><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></li>
+            <li><a href="https://github.com/Risvy">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a></li>
+            <li><a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a></li>
+          </ul>
+        </div>
+        <figure class="opening-portrait">
+          <img src="/images/profile.jpg" alt="Muhid Hassan Risvy" width="640" height="640" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
 
-    <main id="main">
-      <section class="section">
-        <h1>About</h1>
-        <p>I'm a Ph.D. student in computer science at the New Jersey Institute of Technology, working on human-computer interaction and human-AI collaboration. Most of my current work asks how older adults decide whether to trust technologies designed for aging, and what that means for building AI systems people can understand and question.</p>
-        <p>Before NJIT, I did my B.Sc. in computer science and engineering at Shahjalal University of Science and Technology (SUST) in Bangladesh, where I worked on usable security and blockchain systems.</p>
+    <div class="page">
+      <section class="section spread" id="about">
+        <div class="margin"><h2 class="label">About</h2></div>
+        <div class="main">
+          <p>I'm a Ph.D. student in computer science at the New Jersey Institute of Technology, working on human-computer interaction and human-AI collaboration. Most of my current work asks how older adults decide whether to trust technologies designed for aging, and what that means for building AI systems people can understand and question.</p>
+          <p>Before NJIT, I did my B.Sc. in computer science and engineering at Shahjalal University of Science and Technology (SUST) in Bangladesh, where I worked on usable security and blockchain systems.</p>
+          <p>At NJIT I have also taught as a teaching assistant, in courses ranging from introductory cybersecurity to human-robot interaction. See <a href="/experience/">Experience</a>.</p>
+        </div>
       </section>
 
-      <section class="section" id="research">
-        <h2>Research</h2>
-        <h3>Latest paper</h3>
-        <div class="featured-paper">
-          <p class="pub-cite"><strong>Muhid Hassan Risvy</strong>, Dimitri Theodoratos, Alisha Pradhan. Towards Designing for (Dis)Trust in Technologies for Aging. In <em>Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026)</em>. Accepted. <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>.</p>
+      <section class="section spread" id="research" data-scrolly>
+        <div class="margin"><h2 class="label">Research</h2></div>
+        <div class="main">
+          <h3 class="display">How older adults decide whether to trust the technologies designed for them.</h3>
+          <p>For my first paper, my coauthors and I reviewed empirical studies in which older adults talked about trusting, and not trusting, technology. Three patterns kept returning.</p>
+          <ol class="steps" data-scrolly-steps>
+            <li class="step">
+              <h4>Legibility</h4>
+              <p>Distrust emerges when the workings of a system become illegible: when a person cannot tell where their information is stored, or trace where it moves.</p>
+            </li>
+            <li class="step">
+              <h4>Time</h4>
+              <p>Trust is not settled once. It builds through prior experience and shifts with breakdowns, so the same person can rely on a system in one phase of use and withhold that reliance in the next.</p>
+            </li>
+            <li class="step">
+              <h4>Boundaries</h4>
+              <p>Distrust can also be deliberate boundary work: a way of limiting how far a technology reaches into a person's autonomy, relationships, and everyday life.</p>
+            </li>
+          </ol>
+          <p>These patterns point toward systems that support trust across the phases of use, and that make the movement and persistence of information perceptible rather than hidden.</p>
+
+          <article class="paper">
+            <h3 class="paper-title">Towards Designing for (Dis)Trust in Technologies for Aging</h3>
+            <p class="paper-authors"><span class="me">Muhid Hassan Risvy</span>, Dimitri Theodoratos, Alisha Pradhan</p>
+            <p class="paper-venue">Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026). Accepted.</p>
+            <p class="actions">
+              <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>
+              <button class="textlink" type="button" data-toggle="home-abstract" aria-expanded="false" aria-controls="home-abstract">Abstract</button>
+              <button class="textlink" type="button" data-toggle="home-bibtex" aria-expanded="false" aria-controls="home-bibtex">BibTeX</button>
+            </p>
+            <div class="disclosure" id="home-abstract">
+              <div>
+                <div class="disclosure-body">
+                  <p class="abstract">Across cohorts of older adults and generations of technology, (dis)trust has continued to shape the acceptance of technologies for aging. Yet, we still know little about if or how to design for older adults' distrust in technology. Towards this, we reviewed empirical studies in which older adults discussed trust and distrust in relation to technology. Our analysis shows that (dis)trust is constituted in three key ways: it emerges when material arrangements of digital systems become illegible, such as when older adults cannot determine where information is stored or trace its movement; it is temporally constituted and fluid, building and shifting through prior experience and breakdowns; and at times distrust can operate as boundary work through which individuals limit technology's reach into their autonomy, relationships, and everyday lives. Our work yields design directions for supporting trust across different phases of technology use and by designing systems that make the movement and persistence of information more perceptible.</p>
+                </div>
+              </div>
+            </div>
+            <div class="disclosure" id="home-bibtex">
+              <div>
+                <div class="disclosure-body bibtex-wrap">
+                  <pre class="bibtex" id="home-bibtex-text">@inproceedings{risvy2026distrust,
+  author    = {Risvy, Muhid Hassan and Theodoratos, Dimitri and Pradhan, Alisha},
+  title     = {Towards Designing for (Dis)Trust in Technologies for Aging},
+  booktitle = {Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '26)},
+  year      = {2026},
+  publisher = {ACM},
+  doi       = {10.1145/3797867.3829057}
+}</pre>
+                  <button class="textlink copy" type="button" data-copy="home-bibtex-text">Copy</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <p>I work mainly with qualitative and mixed methods, and I try to turn what I learn into concrete design guidance for systems that are more transparent and more accessible. Beyond this paper, I am interested in what appropriate reliance on AI should look like for people who are not experts in it. See <a href="/publications/">Publications</a> for the full list.</p>
         </div>
-        <h3>Research interests</h3>
-        <p>I study how people experience intelligent technologies. Right now that mostly means older adults: how they build, withhold, and repair trust in systems designed for aging, and what appropriate reliance on AI should look like for people who are not experts in it.</p>
-        <p>I work mainly with qualitative and mixed methods, and I try to turn what I learn into concrete design guidance for systems that are more transparent and more accessible. See <a href="/publications/">Publications</a> for the full list.</p>
+
+        <figure class="aside sketchboard" aria-hidden="true">
+          <figure class="sketch" data-sketch="1">
+            <svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke" d="M34 22 h44 a6 6 0 0 1 6 6 v74 a6 6 0 0 1 -6 6 h-44 a6 6 0 0 1 -6 -6 v-74 a6 6 0 0 1 6 -6 z"/>
+              <path class="stroke" d="M48 100 h16"/>
+              <path class="stroke accent" d="M84 62 C110 62 122 50 146 50"/>
+              <circle class="stroke" cx="152" cy="50" r="5"/>
+              <path class="stroke faint" d="M157 47 C182 38 198 30 222 26"/>
+              <path class="stroke faint" d="M157 53 C185 62 202 80 224 90"/>
+              <circle class="stroke faint" cx="228" cy="24" r="5"/>
+              <circle class="stroke faint" cx="230" cy="92" r="5"/>
+              <path class="stroke faint" d="M234 22 C254 18 268 22 284 28"/>
+              <text class="glyph" x="291" y="38" data-late>?</text>
+            </svg>
+            <figcaption>Where information goes, and whether that can be seen.</figcaption>
+          </figure>
+          <figure class="sketch" data-sketch="2">
+            <svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke faint" d="M30 14 V108 H302"/>
+              <path class="stroke accent" d="M30 96 C70 96 96 60 128 52 C146 47 158 45 168 44 L176 84 C206 84 242 62 300 56"/>
+              <path class="stroke faint" d="M172 108 v5"/>
+              <text class="glyph" x="20" y="8" data-late>trust</text>
+              <text class="glyph" x="150" y="126" data-late>breakdown</text>
+              <text class="glyph" x="282" y="126" data-late>time</text>
+            </svg>
+            <figcaption>Trust built over time, and shifted by breakdowns.</figcaption>
+          </figure>
+          <figure class="sketch" data-sketch="3">
+            <svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg">
+              <circle class="stroke" cx="120" cy="48" r="11"/>
+              <path class="stroke" d="M96 92 C96 72 108 66 120 66 C132 66 144 72 144 92"/>
+              <circle class="stroke accent" cx="120" cy="66" r="48"/>
+              <path class="stroke faint" d="M300 34 L176 49"/>
+              <path class="stroke faint" d="M300 66 L176 66"/>
+              <path class="stroke faint" d="M300 98 L176 83"/>
+              <circle class="dot" cx="176" cy="49" r="2.5" data-late/>
+              <circle class="dot" cx="176" cy="66" r="2.5" data-late/>
+              <circle class="dot" cx="176" cy="83" r="2.5" data-late/>
+            </svg>
+            <figcaption>Distrust as a boundary: limiting how far technology reaches.</figcaption>
+          </figure>
+        </figure>
       </section>
 
       <section class="section" id="news">
-        <h2>News</h2>
-        <ol class="news-list">
-          <li class="news-item">
-            <p class="news-date">June 2026</p>
-            <div class="news-body">
-              <p>Our paper "Towards Designing for (Dis)Trust in Technologies for Aging" was accepted to ACM ASSETS 2026 in Porto, Portugal. <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>.</p>
-              <!-- To add photos to a news item (see MAINTENANCE.md), place images in
-                   /images/news/ and uncomment this block. Size classes: photo-small,
-                   photo-medium, photo-large.
-              <div class="news-photos">
-                <figure class="photo photo-medium">
+        <div class="spread section-head"><h2 class="label margin">News</h2></div>
+          <ol class="list">
+            <li class="row">
+              <p class="margin meta"><time datetime="2026-06">June 2026</time></p>
+              <div class="main">
+                <p>Our paper &ldquo;Towards Designing for (Dis)Trust in Technologies for Aging&rdquo; was accepted to ACM ASSETS 2026 in Porto, Portugal. <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>.</p>
+                <!-- To add photos to a news item, see MAINTENANCE.md. Template:
+                <figure class="plate narrow" data-reveal>
                   <a class="lightbox-link" href="/images/news/assets2026-porto-1.jpg">
                     <img src="/images/news/assets2026-porto-1.jpg" alt="Describe the photo" loading="lazy" width="1200" height="900">
                   </a>
-                  <figcaption>Caption text.</figcaption>
+                  <figcaption class="note">Caption text.</figcaption>
                 </figure>
+                -->
               </div>
-              -->
-            </div>
-          </li>
-          <li class="news-item">
-            <p class="news-date">April 2026</p>
-            <div class="news-body">
-              <p>Presented a poster on explainable AI and accessibility at the Dana Knox Student Research Showcase at NJIT.</p>
-            </div>
-          </li>
-          <li class="news-item">
-            <p class="news-date">August 2024</p>
-            <div class="news-body">
-              <p>Started the Ph.D. program in computer science at NJIT.</p>
-            </div>
-          </li>
-        </ol>
+            </li>
+            <li class="row">
+              <p class="margin meta"><time datetime="2026-05">May 2026</time></p>
+              <div class="main"><p>Appointed as a graduate research assistant at NJIT.</p></div>
+            </li>
+            <li class="row">
+              <p class="margin meta"><time datetime="2026-04">April 2026</time></p>
+              <div class="main"><p>Elected as a vice president of the Bangladeshi Graduate Student Association at NJIT.</p></div>
+            </li>
+            <li class="row">
+              <p class="margin meta"><time datetime="2024-08">August 2024</time></p>
+              <div class="main"><p>Started the Ph.D. program in computer science at NJIT.</p></div>
+            </li>
+            <li class="row">
+              <p class="margin meta"><time datetime="2023-05">May 2023</time></p>
+              <div class="main"><p>Graduated with a B.Sc. in computer science and engineering from SUST.</p></div>
+            </li>
+          </ol>
       </section>
 
-      <section class="section" id="awards">
-        <h2>Awards</h2>
-        <ul class="fact-list">
-          <li><span>Finalist, Blockchain Olympiad Bangladesh</span> <span class="fact-when">2021 and 2022</span></li>
-        </ul>
-        <div class="news-photos">
-          <figure class="photo photo-medium">
+      <section class="section spread" id="awards">
+        <div class="margin"><h2 class="label">Recognition</h2></div>
+        <div class="main">
+          <ul class="facts">
+            <li><span>Finalist, Blockchain Olympiad Bangladesh</span> <span class="meta">2021 and 2022</span></li>
+          </ul>
+          <figure class="plate" data-reveal>
             <a class="lightbox-link" href="/images/bcolbd.jpg">
               <img src="/images/bcolbd.jpg" alt="Muhid Hassan Risvy presenting the vaccine supply chain poster in a BBC News Click Bangla segment" loading="lazy" width="1200" height="675">
             </a>
-            <figcaption>Presenting our vaccine supply chain project, featured by BBC News Click Bangla, June 2022. <a href="https://www.tbsnews.net/features/pursuit/blockchain-olympiad-bangladesh-2022-improving-vaccination-identifying-refugees">Coverage in The Business Standard</a>.</figcaption>
+            <figcaption class="note">Presenting our vaccine supply chain project, featured by BBC News Click Bangla, June 2022. <a href="https://www.tbsnews.net/features/pursuit/blockchain-olympiad-bangladesh-2022-improving-vaccination-identifying-refugees">Coverage in The Business Standard</a>.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section" id="service">
-        <h2>Membership and service</h2>
-        <ul class="fact-list">
-          <li><span>Professional member, Association for Computing Machinery</span> <span class="fact-when">since July 2026</span></li>
-          <li><span>Vice President, Bangladeshi Graduate Student Association at NJIT</span> <span class="fact-when">since April 2026</span></li>
-          <li><span>Treasurer, Bangladeshi Graduate Student Association at NJIT</span> <span class="fact-when">May 2025 &ndash; April 2026</span></li>
-        </ul>
+      <section class="section spread" id="service">
+        <div class="margin"><h2 class="label">Membership and service</h2></div>
+        <div class="main">
+          <ul class="facts">
+            <li class="current"><span>Vice President, Bangladeshi Graduate Student Association at NJIT</span> <span class="meta">Current, since April 2026</span></li>
+            <li><span>Member, Association for Computing Machinery</span> <span class="meta">since July 2026</span></li>
+            <li><span>Treasurer, Bangladeshi Graduate Student Association at NJIT</span> <span class="meta">May 2025 &ndash; April 2026</span></li>
+          </ul>
+        </div>
       </section>
-    </main>
-  </div>
 
-  <footer class="site-footer">
-    <div class="container">
+      <section class="section spread" id="contact">
+        <div class="margin"><h2 class="label">Contact</h2></div>
+        <div class="main">
+          <p class="contact-email"><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></p>
+          <address class="contact-lines">New Jersey Institute of Technology<br>218 Central Ave, Newark, NJ 07102</address>
+          <p class="contact-lines">It is <span data-local-time>daytime</span> in Newark right now.</p>
+          <p class="actions">
+            <a href="https://github.com/Risvy">GitHub</a>
+            <a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a>
+            <a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="colophon note">
+    <div class="page">
       <p>&copy; <span data-year>2026</span> Muhid Hassan Risvy</p>
-      <p>Last updated August 2026</p>
+      <p>Last updated September 2026</p>
     </div>
   </footer>
 </body>

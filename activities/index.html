@@ -1,23 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Activities | Muhid Hassan Risvy</title>
-  <meta name="description" content="Hackathons, sports, photography, and debate from Muhid Hassan Risvy's student years.">
+  <meta name="description" content="Hackathons, sports, and photography by Muhid Hassan Risvy.">
   <meta name="author" content="Muhid Hassan Risvy">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131416" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://risvy.github.io/activities/">
   <meta property="og:site_name" content="Muhid Hassan Risvy">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://risvy.github.io/activities/">
   <meta property="og:title" content="Activities | Muhid Hassan Risvy">
-  <meta property="og:description" content="Hackathons, sports, photography, and debate from Muhid Hassan Risvy's student years.">
+  <meta property="og:description" content="Hackathons, sports, and photography by Muhid Hassan Risvy.">
   <meta property="og:image" content="https://risvy.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="/assets/js/main.js" defer></script>
@@ -25,12 +30,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Muhid Hassan Risvy</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
+  <header class="masthead">
+    <div class="page masthead-inner">
+      <a class="wordmark" href="/">Muhid Hassan Risvy</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="/">Home</a></li>
           <li><a href="/#research">Research</a></li>
           <li><a href="/publications/">Publications</a></li>
@@ -39,95 +44,91 @@
           <li><a href="/activities/" aria-current="page">Activities</a></li>
           <li><a href="/cv/">CV</a></li>
         </ul>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </div>
   </header>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <img class="sidebar-photo" src="/images/profile.jpg" alt="Muhid Hassan Risvy" width="640" height="640">
-      <p class="sidebar-name">Muhid Hassan Risvy</p>
-      <p class="sidebar-role">Ph.D. student, Computer Science<br>New Jersey Institute of Technology</p>
-      <ul class="sidebar-links">
-        <li><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></li>
-        <li><a href="https://github.com/Risvy">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a></li>
-        <li><a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a></li>
-      </ul>
-      <address class="sidebar-address">218 Central Ave<br>Newark, NJ 07102</address>
-    </aside>
-
-    <main id="main">
-      <section class="section">
+  <main id="main" class="page">
+    <section class="title-block spread">
+      <div class="margin"></div>
+      <div class="main">
         <h1>Activities</h1>
-        <p>Competitions, sports, and photography, mostly from my student years at SUST.</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>Hackathons</h2>
+    <section class="section spread" id="hackathons">
+      <div class="margin"><h2 class="label">Hackathons</h2></div>
+      <div class="main">
         <article class="entry">
           <div class="entry-head">
             <h3>HackNSU, North South University</h3>
-            <span class="entry-meta">2019</span>
+            <span class="meta">2019</span>
           </div>
           <p>Led a team that designed Digital House Renting, a business model aimed at easing the house rental market in urban areas.</p>
         </article>
         <article class="entry">
           <div class="entry-head">
             <h3>National Hackathon Competition, Leading University</h3>
-            <span class="entry-meta">2019</span>
+            <span class="meta">2019</span>
           </div>
           <p>Our team built a mobile app that helps teachers and students manage courses and communicate with each other.</p>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>Sports</h2>
-        <ul class="fact-list">
-          <li><span>Soccer: champion (2019) and runners-up (2022), Intra IICT Tournament, SUST</span> <span class="fact-when">2019, 2022</span></li>
-          <li><span>Table tennis: runners-up, intra-department tournament, SUST</span> <span class="fact-when">2022</span></li>
-          <li><span>Handball: player and team manager, inter-department tournament, SUST</span> <span class="fact-when">2018 &ndash; 2022</span></li>
+    <section class="section spread" id="sports">
+      <div class="margin"><h2 class="label">Sports</h2></div>
+      <div class="main">
+        <ul class="facts">
+          <li><span>Soccer: champion (2019) and runners-up (2022), Intra IICT Tournament, SUST</span> <span class="meta">2019, 2022</span></li>
+          <li><span>Table tennis: runners-up, intra-department tournament, SUST</span> <span class="meta">2022</span></li>
+          <li><span>Handball: player and team manager, inter-department tournament, SUST</span> <span class="meta">2018 &ndash; 2022</span></li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>Photography</h2>
+    <section class="section spread" id="photography">
+      <div class="margin"><h2 class="label">Photography</h2></div>
+      <div class="main">
         <p>A few photographs of mine were shown at a university exhibition in 2023.</p>
-        <div class="photo-grid">
-          <figure>
+        <div class="gallery">
+          <figure data-reveal>
             <a class="lightbox-link" href="/images/exhibition-1.jpg">
               <img src="/images/exhibition-1.jpg" alt="A bird perched on the bare branches of a tree, silhouetted against a dusk sky" loading="lazy" width="839" height="1200">
             </a>
           </figure>
-          <figure>
+          <figure data-reveal>
             <a class="lightbox-link" href="/images/exhibition-2.jpg">
               <img src="/images/exhibition-2.jpg" alt="The sun setting at the horizon over the sea, viewed from a beach with incoming waves" loading="lazy" width="937" height="1200">
             </a>
           </figure>
-          <figure>
+          <figure data-reveal>
             <a class="lightbox-link" href="/images/exhibition-3.jpg">
               <img src="/images/exhibition-3.jpg" alt="Smooth stones beneath the clear water of a river, with a pebbled bank and forested hills in the distance" loading="lazy" width="1200" height="864">
             </a>
           </figure>
-          <figure>
+          <figure data-reveal>
             <a class="lightbox-link" href="/images/exhibition-4.jpg">
               <img src="/images/exhibition-4.jpg" alt="Waves washing onto a beach at dusk, with the afterglow of sunset reflected on the wet sand" loading="lazy" width="1200" height="900">
             </a>
           </figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>Debate</h2>
+    <section class="section spread" id="debate">
+      <div class="margin"><h2 class="label">Debate</h2></div>
+      <div class="main">
         <p>In high school I led a debate team that competed in several district-level competitions.</p>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <footer class="colophon note">
+    <div class="page">
       <p>&copy; <span data-year>2026</span> Muhid Hassan Risvy</p>
-      <p>Last updated August 2026</p>
+      <p>Last updated September 2026</p>
     </div>
   </footer>
 </body>

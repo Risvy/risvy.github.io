@@ -7,37 +7,36 @@ Quick reference:
 
 | What | Where |
 |------|-------|
-| News | `index.html`, the `<ol class="news-list">` inside `<section id="news">` |
-| Featured publication (home) | `index.html`, the `<section>` with eyebrow "Featured Publication" |
-| Full publication list | `publications/index.html` |
-| Research narrative | `research/index.html` |
-| Courses, education, skills | `experience/index.html` |
+| Opening statement, About, Research, News, Recognition, Service, Contact | `index.html` |
+| Full publication list, abstract, BibTeX | `publications/index.html` (the featured paper is repeated in `index.html`) |
 | Projects | `projects/index.html` |
+| Courses, education, skills | `experience/index.html` |
 | Hackathons, sports, photos | `activities/index.html` |
 | CV PDF | `files/CV_Muhid_Hassan_Risvy.pdf` |
-| Sidebar (photo, title, links) | Repeated in every page; update all seven pages |
+| Header navigation and footer | Repeated in every page; update all six pages |
+| Styles and behaviour | `assets/css/main.css`, `assets/js/main.js` |
+
+## Layout vocabulary
+
+Each section is a three-column grid: a narrow margin column for the running
+head (the small label such as "News"), a reading column, and a wide aside.
+Items in a list (news, publications, projects) are `<li class="row">` blocks
+whose margin column holds the date, year, or technology, and whose main
+column holds the text. Below 720 px the margin stacks above the text.
 
 ## Add a news item
 
-News items live in `index.html` inside `<ol class="news-list">`. The newest
-item goes first. Copy this block and edit the date, tag, and text:
+News items live in `index.html` inside `<ol class="list">` under the
+`<section id="news">`. The newest item goes first. Copy this block:
 
 ```html
-<li class="news-item reveal" style="--i: 0;">
-  <p class="news-date">October 2026</p>
-  <div class="news-body">
-    <span class="tag tag-presentation">Presentation</span>
+<li class="row">
+  <p class="margin meta"><time datetime="2026-10">October 2026</time></p>
+  <div class="main">
     <p>Item text goes here.</p>
   </div>
 </li>
 ```
-
-Notes:
-
-- `--i` controls the entrance animation stagger. Renumber items from the top
-  starting at 0 so the newest item animates first.
-- Tag options: `tag-publication` (gold), `tag-milestone` (blue),
-  `tag-presentation` (green). Pick whichever fits; the tag text is free-form.
 
 ## Add photos to a news item
 
@@ -51,60 +50,64 @@ Notes:
 2. Put the resized file in `images/news/` (create the folder if it does not
    exist yet).
 
-3. Inside the item's `<div class="news-body">`, after the text paragraph, add:
+3. Inside the item's `<div class="main">`, after the text paragraph, add:
 
    ```html
-   <div class="news-photos">
-     <figure class="photo photo-medium">
-       <a class="lightbox-link" href="/images/news/assets2026-porto-1.jpg">
-         <img src="/images/news/assets2026-porto-1.jpg" alt="Describe the photo" loading="lazy" width="1200" height="900">
-       </a>
-       <figcaption>Caption text.</figcaption>
-     </figure>
-   </div>
+   <figure class="plate narrow" data-reveal>
+     <a class="lightbox-link" href="/images/news/assets2026-porto-1.jpg">
+       <img src="/images/news/assets2026-porto-1.jpg" alt="Describe the photo" loading="lazy" width="1200" height="900">
+     </a>
+     <figcaption class="note">Caption text.</figcaption>
+   </figure>
    ```
 
-   Repeat the `<figure>` block for up to three photos per item. The June 2026
-   news item in `index.html` contains this same block commented out as a
+   Drop `narrow` for a full-column photo. `data-reveal` gives the photo a
+   gentle entrance as it scrolls into view. Set `width` and `height` to the
+   real pixel dimensions so the page does not shift while loading. Clicking a
+   photo opens it in a lightbox automatically because of the `lightbox-link`
+   class. The June 2026 news item contains this block commented out as a
    template.
-
-Photo size classes:
-
-| Class | Rendered width |
-|-------|----------------|
-| `photo-small` | 160 px |
-| `photo-medium` | 280 px |
-| `photo-large` | full column width |
-
-Set `width` and `height` attributes to the real pixel dimensions of the file
-so the page does not shift while loading. The `figcaption` is optional;
-delete the line if there is no caption. Clicking a photo opens it in a
-lightbox automatically because of the `lightbox-link` class.
 
 The same figure markup works anywhere else on the site, for example under an
 award or inside an activity section.
 
 ## Add a publication
 
-1. In `publications/index.html`, add a `<li>` to the list under the right
-   year heading (`<p class="pub-year">`). Add a new year heading when needed:
+1. In `publications/index.html`, add a `<li class="row">` to the list under
+   the right section. Put the year in the margin column:
 
    ```html
-   <li>
-     <p class="pub-cite"><strong>Muhid Hassan Risvy</strong>, Coauthor Name.
-     (2027). Paper Title. In <em>Venue Name</em>. (Accepted)</p>
+   <li class="row">
+     <p class="margin meta">2027</p>
+     <div class="main">
+       <article>
+         <h3 class="paper-title">Paper Title</h3>
+         <p class="paper-authors"><span class="me">Muhid Hassan Risvy</span>, Coauthor Name</p>
+         <p class="paper-venue">Venue Name (Year). Accepted.</p>
+         <p class="actions"><a href="https://arxiv.org/abs/...">arXiv preprint</a></p>
+       </article>
+     </div>
    </li>
    ```
 
-   Keep your own name inside `<strong>`. Remove "(Accepted)" once the paper
-   is published, and add links (PDF, DOI) at the end of the citation if
-   available.
+   To add an expandable abstract or BibTeX, copy the `Abstract` and `BibTeX`
+   buttons and the two `<div class="disclosure">` blocks from the existing
+   paper and give them a new id prefix (for example `pub2-abstract`,
+   `pub2-bibtex`, `pub2-bibtex-text`).
 
-2. Update the featured publication card in `index.html` (the section with
-   eyebrow "Featured Publication") with the same citation so the home page
-   always shows the most recent paper.
+2. Update the featured paper in `index.html` (the `<article class="paper">`
+   inside the Research section) so the home page shows the most recent
+   paper.
 
 3. Consider adding a matching news item.
+
+## Update the research sketches
+
+The three line drawings in the Research section are inline SVG inside
+`<figure class="sketchboard">` in `index.html`. Each `<figure class="sketch">`
+pairs with one `<li class="step">` in the same order. Lines with the class
+`stroke` draw themselves when their step becomes active; elements with
+`data-late` fade in after the lines. Keep the `viewBox` at `0 0 320 130`.
 
 ## Replace the CV
 
@@ -114,8 +117,8 @@ same filename. Update the "Updated ..." label in `cv/index.html` (look for
 
 ## After any edit
 
-- Update the "Last updated ..." line in the footer of the pages you touched
-  (search for `Last updated`).
+- Update the "Last updated ..." line in the footer of every page (search for
+  `Last updated`).
 - If you added or removed a page, update `sitemap.xml`.
 - Preview locally before pushing:
 

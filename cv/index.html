@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,6 +6,8 @@
   <title>CV | Muhid Hassan Risvy</title>
   <meta name="description" content="Curriculum vitae of Muhid Hassan Risvy.">
   <meta name="author" content="Muhid Hassan Risvy">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131416" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://risvy.github.io/cv/">
   <meta property="og:site_name" content="Muhid Hassan Risvy">
   <meta property="og:type" content="website">
@@ -18,6 +20,9 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="/assets/js/main.js" defer></script>
@@ -25,12 +30,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Muhid Hassan Risvy</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
+  <header class="masthead">
+    <div class="page masthead-inner">
+      <a class="wordmark" href="/">Muhid Hassan Risvy</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="/">Home</a></li>
           <li><a href="/#research">Research</a></li>
           <li><a href="/publications/">Publications</a></li>
@@ -39,44 +44,38 @@
           <li><a href="/activities/">Activities</a></li>
           <li><a href="/cv/" aria-current="page">CV</a></li>
         </ul>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </div>
   </header>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <img class="sidebar-photo" src="/images/profile.jpg" alt="Muhid Hassan Risvy" width="640" height="640">
-      <p class="sidebar-name">Muhid Hassan Risvy</p>
-      <p class="sidebar-role">Ph.D. student, Computer Science<br>New Jersey Institute of Technology</p>
-      <ul class="sidebar-links">
-        <li><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></li>
-        <li><a href="https://github.com/Risvy">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a></li>
-        <li><a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a></li>
-      </ul>
-      <address class="sidebar-address">218 Central Ave<br>Newark, NJ 07102</address>
-    </aside>
-
-    <main id="main">
-      <section class="section">
-        <h1>CV</h1>
-        <div class="cv-actions">
+  <main id="main" class="page">
+    <section class="title-block spread">
+      <div class="margin"></div>
+      <div class="main">
+        <h1>Curriculum vitae</h1>
+        <p class="cv-actions actions">
           <a href="/files/CV_Muhid_Hassan_Risvy.pdf" download>Download PDF</a>
           <a href="/files/CV_Muhid_Hassan_Risvy.pdf" target="_blank" rel="noopener">Open in a new tab</a>
-          <span class="cv-updated">Updated July 2026</span>
-        </div>
+          <span class="meta cv-updated">Updated July 2026</span>
+        </p>
+      </div>
+    </section>
+    <section class="spread">
+      <div class="margin"></div>
+      <div class="main" style="grid-column: 2 / -1;">
         <object class="cv-embed" data="/files/CV_Muhid_Hassan_Risvy.pdf" type="application/pdf" aria-label="CV of Muhid Hassan Risvy">
           <iframe src="/files/CV_Muhid_Hassan_Risvy.pdf" title="CV PDF"></iframe>
           <p>Your browser cannot display the PDF here. <a href="/files/CV_Muhid_Hassan_Risvy.pdf">Download the CV instead.</a></p>
         </object>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <footer class="colophon note">
+    <div class="page">
       <p>&copy; <span data-year>2026</span> Muhid Hassan Risvy</p>
-      <p>Last updated August 2026</p>
+      <p>Last updated September 2026</p>
     </div>
   </footer>
 </body>

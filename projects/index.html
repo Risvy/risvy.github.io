@@ -1,23 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Muhid Hassan Risvy</title>
-  <meta name="description" content="Software projects by Muhid Hassan Risvy, with source code on GitHub.">
+  <meta name="description" content="Software and research projects by Muhid Hassan Risvy.">
   <meta name="author" content="Muhid Hassan Risvy">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131416" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://risvy.github.io/projects/">
   <meta property="og:site_name" content="Muhid Hassan Risvy">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://risvy.github.io/projects/">
   <meta property="og:title" content="Projects | Muhid Hassan Risvy">
-  <meta property="og:description" content="Software projects by Muhid Hassan Risvy, with source code on GitHub.">
+  <meta property="og:description" content="Software and research projects by Muhid Hassan Risvy.">
   <meta property="og:image" content="https://risvy.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="/assets/js/main.js" defer></script>
@@ -25,12 +30,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Muhid Hassan Risvy</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
+  <header class="masthead">
+    <div class="page masthead-inner">
+      <a class="wordmark" href="/">Muhid Hassan Risvy</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="/">Home</a></li>
           <li><a href="/#research">Research</a></li>
           <li><a href="/publications/">Publications</a></li>
@@ -39,105 +44,92 @@
           <li><a href="/activities/">Activities</a></li>
           <li><a href="/cv/">CV</a></li>
         </ul>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </div>
   </header>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <img class="sidebar-photo" src="/images/profile.jpg" alt="Muhid Hassan Risvy" width="640" height="640">
-      <p class="sidebar-name">Muhid Hassan Risvy</p>
-      <p class="sidebar-role">Ph.D. student, Computer Science<br>New Jersey Institute of Technology</p>
-      <ul class="sidebar-links">
-        <li><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></li>
-        <li><a href="https://github.com/Risvy">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muhid-hassan-risvy-16895a198/">LinkedIn</a></li>
-        <li><a href="/files/CV_Muhid_Hassan_Risvy.pdf">CV (PDF)</a></li>
-      </ul>
-      <address class="sidebar-address">218 Central Ave<br>Newark, NJ 07102</address>
-    </aside>
-
-    <main id="main">
-      <section class="section">
+  <main id="main" class="page">
+    <section class="title-block spread">
+      <div class="margin"></div>
+      <div class="main">
         <h1>Projects</h1>
-        <p>Selected projects, with source code on <a href="https://github.com/Risvy">GitHub</a>.</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <article class="entry">
-          <div class="entry-head">
-            <h3><a href="https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project">COVID-19 vaccine supply chain</a></h3>
-          </div>
-          <p>A private blockchain-based supply chain for end-to-end traceability of COVID-19 vaccines, covering distribution and transportation. Finalist at the Blockchain Olympiad Bangladesh 2022.</p>
-          <p class="tech-line">Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB</p>
-        </article>
+    <section class="section" id="software">
+      <div class="spread section-head"><h2 class="label margin">Software</h2></div>
+        <ol class="list">
+          <li class="row">
+            <p class="margin meta">Hyperledger Fabric, Node.js, JavaScript, Apache CouchDB</p>
+            <div class="main">
+              <h3><a href="https://github.com/Risvy/VSN-A-Hyperledger-Fabric-Project">COVID-19 vaccine supply chain</a></h3>
+              <p>A private blockchain-based supply chain for end-to-end traceability of COVID-19 vaccines, covering distribution and transportation. Finalist at the Blockchain Olympiad Bangladesh 2022.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">React, TypeScript, Chrome Extension API</p>
+            <div class="main">
+              <h3><a href="https://github.com/Risvy/Passkey-Health-Manager">Passkey Health Manager</a></h3>
+              <p>A Chrome extension that manages passkeys and audits their health: tracking passkey security, detecting weak keys through hash collision detection, monitoring share counts, and keeping an export history.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">Node.js, Express.js, MongoDB</p>
+            <div class="main">
+              <h3><a href="https://github.com/Risvy/API-Project-Ecommerce-">E-commerce and bank API</a></h3>
+              <p>An API-based platform that simulates commerce among a customer, a supplier, and a bank, with instant transactions between them.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">Android Studio, Java</p>
+            <div class="main">
+              <h3><a href="https://github.com/Risvy/SUST-CSE-Community">SUST CSE Community</a></h3>
+              <p>An Android app that connects current students with alumni of the CSE department at SUST. Students can search for alumni by name, batch, or workplace.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">Python</p>
+            <div class="main">
+              <h3><a href="https://github.com/Risvy/Bangla-Text-and-Document-Summarizer">Bangla text summarization</a></h3>
+              <p>Abstractive and extractive summarization of Bangla text using unsupervised learning.</p>
+            </div>
+          </li>
+        </ol>
+    </section>
 
-        <article class="entry">
-          <div class="entry-head">
-            <h3><a href="https://github.com/Risvy/Passkey-Health-Manager">Passkey Health Manager</a></h3>
-          </div>
-          <p>A Chrome extension that manages passkeys and audits their health: tracking passkey security, detecting weak keys through hash collision detection, monitoring share counts, and keeping an export history.</p>
-          <p class="tech-line">React, TypeScript, Chrome Extension API</p>
-        </article>
+    <section class="section" id="earlier-research">
+      <div class="spread section-head"><h2 class="label margin">Earlier research</h2></div>
+        <ol class="list">
+          <li class="row">
+            <p class="margin meta">Usable security</p>
+            <div class="main">
+              <h3>Security analysis of passkeys</h3>
+              <p>I analyzed how passkeys are stored across popular password managers and found metadata leakage and weak encryption practices that can expose login data, visited URLs, and timestamps. I also built a browser extension that flags compromised or at-risk passkeys for each website a user signs in to.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">Language models, Playwright</p>
+            <div class="main">
+              <h3>Browser automation for improving security guides</h3>
+              <p>I built a system that validates and updates public security guides, such as those maintained by the Electronic Frontier Foundation, when platforms change their interfaces or settings. It pairs open-source language models running on HPC clusters with Playwright-based browser automation.</p>
+            </div>
+          </li>
+          <li class="row">
+            <p class="margin meta">Undergraduate thesis</p>
+            <div class="main">
+              <h3>Security analysis of software cryptocurrency wallets</h3>
+              <p>My thesis examined security vulnerabilities and privacy practices in software cryptocurrency wallets, combining vulnerability assessment tools with manual and machine-learning analysis of user reviews. Supervised by <a href="https://scholar.google.com/citations?user=n3jMWFQAAAAJ&amp;hl=en&amp;oi=ao">Dr. Jabed Morshed Chowdhury</a> and <a href="https://scholar.google.com/citations?user=DnQAee0AAAAJ&amp;hl=en&amp;oi=ao">Dr. Sadek Ferdous Ripul</a>.</p>
+            </div>
+          </li>
+        </ol>
+    </section>
+  </main>
 
-        <article class="entry">
-          <div class="entry-head">
-            <h3><a href="https://github.com/Risvy/API-Project-Ecommerce-">E-commerce and bank API</a></h3>
-          </div>
-          <p>An API-based platform that simulates commerce among a customer, a supplier, and a bank, with instant transactions between them.</p>
-          <p class="tech-line">Node.js, Express.js, MongoDB</p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3><a href="https://github.com/Risvy/SUST-CSE-Community">SUST CSE Community</a></h3>
-          </div>
-          <p>An Android app that connects current students with alumni of the CSE department at SUST. Students can search for alumni by name, batch, or workplace.</p>
-          <p class="tech-line">Android Studio, Java</p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3><a href="https://github.com/Risvy/Bangla-Text-and-Document-Summarizer">Bangla text summarization</a></h3>
-          </div>
-          <p>Abstractive and extractive summarization of Bangla text using unsupervised learning.</p>
-          <p class="tech-line">Python</p>
-        </article>
-      </section>
-
-      <section class="section">
-        <h2>Earlier research</h2>
-        <p>Research projects from before the Ph.D., mostly in usable security.</p>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Security analysis of passkeys</h3>
-          </div>
-          <p>I analyzed how passkeys are stored across popular password managers and found metadata leakage and weak encryption practices that can expose login data, visited URLs, and timestamps. I also built a browser extension that flags compromised or at-risk passkeys for each website a user signs in to.</p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Browser automation for improving security guides</h3>
-          </div>
-          <p>I built a system that validates and updates public security guides, such as those maintained by the Electronic Frontier Foundation, when platforms change their interfaces or settings. It pairs open-source language models running on HPC clusters with Playwright-based browser automation.</p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Security analysis of software cryptocurrency wallets</h3>
-            <span class="entry-meta">Undergraduate thesis</span>
-          </div>
-          <p>My thesis examined security vulnerabilities and privacy practices in software cryptocurrency wallets, combining vulnerability assessment tools with manual and machine-learning analysis of user reviews. Supervised by <a href="https://scholar.google.com/citations?user=n3jMWFQAAAAJ&amp;hl=en&amp;oi=ao">Dr. Jabed Morshed Chowdhury</a> and <a href="https://scholar.google.com/citations?user=DnQAee0AAAAJ&amp;hl=en&amp;oi=ao">Dr. Sadek Ferdous Ripul</a>.</p>
-        </article>
-      </section>
-    </main>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
+  <footer class="colophon note">
+    <div class="page">
       <p>&copy; <span data-year>2026</span> Muhid Hassan Risvy</p>
-      <p>Last updated August 2026</p>
+      <p>Last updated September 2026</p>
     </div>
   </footer>
 </body>
