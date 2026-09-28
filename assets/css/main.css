@@ -1002,5 +1002,6 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--i
   body { font-size: 11pt; }
 }
 
-.scholar-note { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
-.scholar-note p { margin: 0; color: var(--ink-2); }
+.scholar-note { margin: 1.25rem 0 0; color: var(--ink-2); }
+.scholar-note a { color: #1a56b8; text-decoration-color: currentColor; }
+@media (prefers-color-scheme: dark) { .scholar-note a { color: #7aa7ee; } }
