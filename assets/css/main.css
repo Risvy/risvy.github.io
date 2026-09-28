@@ -1001,3 +1001,6 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--i
   .masthead, .colophon, .menu-toggle, .actions, .disclosure { display: none; }
   body { font-size: 11pt; }
 }
+
+.scholar-note { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+.scholar-note p { margin: 0; color: var(--ink-2); }
