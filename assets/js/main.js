@@ -80,6 +80,37 @@
     });
   }
 
+  /* Staggered reveal of section content */
+  $$("[data-reveal-group]").forEach(function (group) {
+    $$(":scope > *", group).forEach(function (el, i) { el.style.setProperty("--i", String(Math.min(i, 8))); });
+  });
+  var groups = $$("[data-reveal-group]");
+  if ("IntersectionObserver" in window && groups.length) {
+    var groupIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add("in"); groupIO.unobserve(entry.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    groups.forEach(function (g) { groupIO.observe(g); });
+  } else {
+    groups.forEach(function (g) { g.classList.add("in"); });
+  }
+
+  /* Reading progress hairline */
+  if (!reduceMotion) {
+    var bar = doc.createElement("div");
+    bar.className = "progress";
+    bar.setAttribute("aria-hidden", "true");
+    doc.body.appendChild(bar);
+    var onProgress = function () {
+      var max = root.scrollHeight - window.innerHeight;
+      bar.style.transform = "scaleX(" + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ")";
+    };
+    onProgress();
+    window.addEventListener("scroll", onProgress, { passive: true });
+    window.addEventListener("resize", onProgress);
+  }
+
   /* Section hairlines and figure reveals */
   var revealTargets = $$(".section, [data-reveal]");
   if ("IntersectionObserver" in window && revealTargets.length) {
@@ -163,6 +194,65 @@
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   });
+
+  /* Show or hide a whole section (research findings) */
+  $$("[data-show]").forEach(function (btn) {
+    var target = doc.getElementById(btn.getAttribute("data-show"));
+    if (!target) return;
+    btn.addEventListener("click", function () {
+      var open = target.hasAttribute("hidden");
+      if (open) { target.removeAttribute("hidden"); } else { target.setAttribute("hidden", ""); }
+      $$("[data-show='" + target.id + "']").forEach(function (b) {
+        b.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      if (open) {
+        target.classList.add("in");
+        target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      } else {
+        var opener = $("[data-show='" + target.id + "']:not(#" + target.id + " *)");
+        if (opener) opener.focus();
+      }
+    });
+  });
+
+  /* Small news panel once the reader has scrolled past the opening */
+  var newsFloat = $("#news-float");
+  var opening = $(".opening");
+  if (newsFloat && opening && "IntersectionObserver" in window) {
+    var dismissed = false;
+    try { dismissed = window.sessionStorage.getItem("news-float") === "hidden"; } catch (err) { dismissed = false; }
+    var showNews = function (show) {
+      if (dismissed) show = false;
+      if (show && newsFloat.hasAttribute("hidden")) {
+        newsFloat.removeAttribute("hidden");
+        window.requestAnimationFrame(function () { newsFloat.classList.add("is-visible"); });
+      } else if (!show) {
+        newsFloat.classList.remove("is-visible");
+      }
+    };
+    var pastOpening = false, newsOnScreen = false;
+    var updateNews = function () { showNews(pastOpening && !newsOnScreen); };
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        pastOpening = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        updateNews();
+      });
+    }, { threshold: 0 }).observe(opening);
+    var newsSection = $("#news");
+    if (newsSection) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) { newsOnScreen = entry.isIntersecting; updateNews(); });
+      }, { threshold: 0.1 }).observe(newsSection);
+    }
+    $(".news-float-close", newsFloat).addEventListener("click", function () {
+      dismissed = true;
+      try { window.sessionStorage.setItem("news-float", "hidden"); } catch (err) { /* ignore */ }
+      showNews(false);
+    });
+    newsFloat.addEventListener("click", function (e) {
+      if (e.target.closest('a[href="#news"]')) showNews(false);
+    });
+  }
 
   /* Copy to clipboard */
   $$("[data-copy]").forEach(function (btn) {

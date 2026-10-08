@@ -17,16 +17,16 @@
   <meta property="og:description" content="Ph.D. student in computer science at NJIT working on human-computer interaction, human-AI collaboration, and trust in technologies for aging.">
   <meta property="og:image" content="https://risvy.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="/favicon.ico?v=3" sizes="48x48">
-  <link rel="icon" href="/favicon-32x32.png?v=3" type="image/png" sizes="32x32">
-  <link rel="icon" href="/favicon-16x16.png?v=3" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+  <link rel="icon" href="/favicon.ico?v=5" sizes="48x48">
+  <link rel="icon" href="/favicon-32x32.png?v=5" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png?v=5" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261008">
   <script>document.documentElement.classList.add('js');</script>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20261008" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,11 +58,11 @@
       <nav class="nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="/" aria-current="page">Home</a></li>
-          <li><a href="/#research">Research</a></li>
-          <li><a href="/publications/">Publications</a></li>
-          <li><a href="/experience/">Experience</a></li>
-          <li><a href="/activities/">Activities</a></li>
-          <li><a href="/cv/">CV</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#cv">CV</a></li>
         </ul>
         <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
@@ -92,19 +92,32 @@
     <div class="page">
       <section class="section spread" id="about">
         <div class="margin"><h2 class="label">About</h2></div>
-        <div class="main">
-          <p>I'm a Ph.D. student in computer science at the New Jersey Institute of Technology, working on human-computer interaction and human-AI collaboration in the <a href="https://heart-lab.gsites.njit.edu/">HEART Lab</a>, advised by Alisha Pradhan and Dimitri Theodoratos. Most of my current work asks how older adults decide whether to trust technologies designed for aging, and what that means for building AI systems people can understand and question.</p>
-          <p>I work mainly with qualitative methods: semi-structured interviews, co-design and ideation sessions, diary studies, and reflexive thematic analysis, combined with surveys in mixed-methods designs when the question calls for it. I am seeking a user experience research internship for summer 2027.</p>
-          <p>Before NJIT, I did my B.Sc. in computer science and engineering at Shahjalal University of Science and Technology (SUST) in Bangladesh, where I worked on usable security and blockchain systems.</p>
-          <p>At NJIT I have also taught as a teaching assistant, in courses ranging from introductory cybersecurity to human-robot interaction. See <a href="/experience/">Experience</a>.</p>
+        <div class="main" data-reveal-group>
+          <p>I'm a Ph.D. student in computer science at the New Jersey Institute of Technology, in the <a href="https://heart-lab.gsites.njit.edu/">HEART Lab</a>, advised by Dr. Alisha Pradhan and Dr. Dimitri Theodoratos. I study how older adults decide whether to trust technologies designed for aging, and what that means for building AI people can understand and question.</p>
+          <p>I build tools, design studies, and evaluate systems to answer questions about people and technology. I work with user-centered design and mixed methods such as interviews, co-design and ideation sessions, diary studies, surveys, and thematic analysis.</p>
+          <p>Before NJIT, I did my B.Sc. in computer science and engineering at Shahjalal University of Science and Technology (SUST), Bangladesh.</p>
+          <p>I am exploring user experience research internships for summer 2027.</p>
         </div>
       </section>
 
-      <section class="section spread" id="research" data-scrolly>
+      <section class="section spread" id="research">
         <div class="margin"><h2 class="label">Research</h2></div>
-        <div class="main">
+        <div class="main" data-reveal-group>
           <h3 class="display">How older adults decide whether to trust the technologies designed for them.</h3>
-          <p>For my first paper, my coauthors and I reviewed empirical studies in which older adults talked about trusting, and not trusting, technology. Three patterns kept returning.</p>
+          <article class="entry">
+            <div class="entry-head"><h4>Trust and distrust in technologies for aging</h4><span class="meta">ACM ASSETS 2026, first author</span></div>
+            <p>Unpacked how distrust takes shape for older adults: when a system's workings become illegible, as trust builds and breaks over time, and as a way of setting boundaries around how far technology reaches. Turned those patterns into design directions.</p>
+            <p class="actions">
+              <button class="textlink" type="button" data-show="findings" aria-expanded="false" aria-controls="findings">Read the three patterns</button>
+              <a href="#publications">Paper</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section spread findings" id="findings" data-scrolly hidden>
+        <div class="margin"><h2 class="label">Three patterns</h2></div>
+        <div class="main">
           <ol class="steps" data-scrolly-steps>
             <li class="step">
               <h4>Legibility</h4>
@@ -120,48 +133,7 @@
             </li>
           </ol>
           <p>These patterns point toward systems that support trust across the phases of use, and that make the movement and persistence of information perceptible rather than hidden.</p>
-
-          <article class="paper">
-            <h3 class="paper-title">Towards Designing for (Dis)Trust in Technologies for Aging</h3>
-            <p class="paper-authors"><span class="me">Muhid Hassan Risvy</span>, Dimitri Theodoratos, Alisha Pradhan</p>
-            <p class="paper-venue">Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026). Accepted.</p>
-            <p class="actions">
-              <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>
-              <button class="textlink" type="button" data-toggle="home-abstract" aria-expanded="false" aria-controls="home-abstract">Abstract</button>
-              <button class="textlink" type="button" data-toggle="home-bibtex" aria-expanded="false" aria-controls="home-bibtex">BibTeX</button>
-            </p>
-            <div class="disclosure" id="home-abstract">
-              <div>
-                <div class="disclosure-body">
-                  <p class="abstract">Across cohorts of older adults and generations of technology, (dis)trust has continued to shape the acceptance of technologies for aging. Yet, we still know little about if or how to design for older adults' distrust in technology. Towards this, we reviewed empirical studies in which older adults discussed trust and distrust in relation to technology. Our analysis shows that (dis)trust is constituted in three key ways: it emerges when material arrangements of digital systems become illegible, such as when older adults cannot determine where information is stored or trace its movement; it is temporally constituted and fluid, building and shifting through prior experience and breakdowns; and at times distrust can operate as boundary work through which individuals limit technology's reach into their autonomy, relationships, and everyday lives. Our work yields design directions for supporting trust across different phases of technology use and by designing systems that make the movement and persistence of information more perceptible.</p>
-                </div>
-              </div>
-            </div>
-            <div class="disclosure" id="home-bibtex">
-              <div>
-                <div class="disclosure-body bibtex-wrap">
-                  <pre class="bibtex" id="home-bibtex-text">@inproceedings{risvy2026distrust,
-  author    = {Risvy, Muhid Hassan and Theodoratos, Dimitri and Pradhan, Alisha},
-  title     = {Towards Designing for (Dis)Trust in Technologies for Aging},
-  booktitle = {Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '26)},
-  year      = {2026},
-  publisher = {ACM}
-}</pre>
-                  <button class="textlink copy" type="button" data-copy="home-bibtex-text">Copy</button>
-                </div>
-              </div>
-            </div>
-          </article>
-          <h3 class="display">Current studies</h3>
-          <article class="entry">
-            <div class="entry-head"><h4>Digital legacy and older adults</h4><span class="meta">Under review, ACM CHI 2027</span></div>
-            <p>Ran one-on-one technology ideation sessions with older adults, using scenario and design cards to explore how they envision being represented after death. Co-coded and memoed the session data with reflexive thematic analysis, and co-wrote the manuscript.</p>
-          </article>
-          <article class="entry">
-            <div class="entry-head"><h4>Intelligent assistance for people with MCI or dementia</h4><span class="meta">Under review, ACM CHI 2027</span></div>
-            <p>Co-author on a co-design study of how people with mild cognitive impairment or dementia want intelligent systems to assist them as their abilities change.</p>
-          </article>
-          <p>Across these projects I try to turn what I learn into concrete design guidance for systems that are more transparent and more accessible, and I am interested in what appropriate reliance on AI should look like for people who are not experts in it. See <a href="/publications/">Publications</a> or <a href="https://scholar.google.com/citations?user=9tYrjh8AAAAJ&amp;hl=en">Google Scholar</a> for the full list.</p>
+          <p class="actions"><button class="textlink" type="button" data-show="findings" aria-expanded="true" aria-controls="findings">Close</button></p>
         </div>
 
         <figure class="aside sketchboard" aria-hidden="true">
@@ -208,12 +180,129 @@
         </figure>
       </section>
 
+      <section class="section spread" id="publications">
+        <div class="margin"><h2 class="label">Publications</h2></div>
+        <div class="main" data-reveal-group>
+          <article class="paper">
+            <h3 class="paper-title">Towards Designing for (Dis)Trust in Technologies for Aging</h3>
+            <p class="paper-authors"><span class="me">Muhid Hassan Risvy</span>, Dimitri Theodoratos, Alisha Pradhan</p>
+            <p class="paper-venue">Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026). Accepted.</p>
+            <p class="actions">
+              <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>
+              <button class="textlink" type="button" data-toggle="pub1-abstract" aria-expanded="false" aria-controls="pub1-abstract">Abstract</button>
+              <button class="textlink" type="button" data-toggle="pub1-bibtex" aria-expanded="false" aria-controls="pub1-bibtex">BibTeX</button>
+            </p>
+            <div class="disclosure" id="pub1-abstract">
+              <div>
+                <div class="disclosure-body">
+                  <p class="abstract">Across cohorts of older adults and generations of technology, (dis)trust has continued to shape the acceptance of technologies for aging. Yet, we still know little about if or how to design for older adults' distrust in technology. Towards this, we reviewed empirical studies in which older adults discussed trust and distrust in relation to technology. Our analysis shows that (dis)trust is constituted in three key ways: it emerges when material arrangements of digital systems become illegible, such as when older adults cannot determine where information is stored or trace its movement; it is temporally constituted and fluid, building and shifting through prior experience and breakdowns; and at times distrust can operate as boundary work through which individuals limit technology's reach into their autonomy, relationships, and everyday lives. Our work yields design directions for supporting trust across different phases of technology use and by designing systems that make the movement and persistence of information more perceptible.</p>
+                </div>
+              </div>
+            </div>
+            <div class="disclosure" id="pub1-bibtex">
+              <div>
+                <div class="disclosure-body bibtex-wrap">
+                  <pre class="bibtex" id="pub1-bibtex-text">@inproceedings{risvy2026distrust,
+  author    = {Risvy, Muhid Hassan and Theodoratos, Dimitri and Pradhan, Alisha},
+  title     = {Towards Designing for (Dis)Trust in Technologies for Aging},
+  booktitle = {Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '26)},
+  year      = {2026},
+  publisher = {ACM}
+}</pre>
+                  <button class="textlink copy" type="button" data-copy="pub1-bibtex-text">Copy</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <p class="note">Full list on <a href="https://scholar.google.com/citations?user=9tYrjh8AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+        </div>
+      </section>
+
+      <section class="section spread" id="experience">
+        <div class="margin"><h2 class="label">Experience</h2></div>
+        <div class="main" data-reveal-group>
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Graduate Research Assistant, <a href="https://heart-lab.gsites.njit.edu/">HEART Lab</a>, NJIT</h3>
+              <span class="meta">May 2026 &ndash; August 2026</span>
+            </div>
+            <p>Human-computer interaction and human-AI collaboration, focusing on older adults and trust in technologies for aging. See <a href="#research">Research</a>.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Graduate Teaching Assistant, NJIT</h3>
+              <span class="meta">August 2024 &ndash; present</span>
+            </div>
+            <p class="actions"><button class="textlink" type="button" data-toggle="ta-courses" aria-expanded="false" aria-controls="ta-courses">Courses</button></p>
+            <div class="disclosure" id="ta-courses">
+              <div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Term</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Title</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="num">Fall 2026</td><td class="num">DS 110</td><td>Basic Foundations of Artificial Intelligence</td></tr>
+                  <tr><td class="num">Fall 2026</td><td class="num">CS 332</td><td>Principles of Operating Systems</td></tr>
+                  <tr><td class="num">Spring 2026</td><td class="num">CS 698</td><td>Human-Robot Interaction</td></tr>
+                  <tr><td class="num">Spring 2026</td><td class="num">CS 288</td><td>Intensive Programming in Linux</td></tr>
+                  <tr><td class="num">Fall 2025</td><td class="num">CS 288</td><td>Intensive Programming in Linux (two sections)</td></tr>
+                  <tr><td class="num">Summer 2025</td><td class="num">CS 288</td><td>Intensive Programming in Linux</td></tr>
+                  <tr><td class="num">Summer 2025</td><td class="num">CS 332</td><td>Principles of Operating Systems</td></tr>
+                  <tr><td class="num">Spring 2025</td><td class="num">CS 388</td><td>Android Application Development</td></tr>
+                  <tr><td class="num">Fall 2024</td><td class="num">CS 351</td><td>Introduction to Cybersecurity</td></tr>
+                </tbody>
+              </table>
+            </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section spread" id="education">
+        <div class="margin"><h2 class="label">Education</h2></div>
+        <div class="main" data-reveal-group>
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Ph.D. in Computer Science, NJIT</h3>
+              <span class="meta">Fall 2024 &ndash; present</span>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <h3>B.Sc. in Computer Science and Engineering, SUST</h3>
+              <span class="meta">March 2023</span>
+            </div>
+            <p>Shahjalal University of Science and Technology, Sylhet, Bangladesh.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section spread" id="skills">
+        <div class="margin"><h2 class="label">Skills</h2></div>
+        <div class="main" data-reveal-group>
+          <article class="entry">
+            <div class="entry-head"><h3>Research methods</h3></div>
+            <p>Semi-structured interviews, co-design and ideation sessions, diary studies, surveys, reflexive thematic analysis, qualitative coding and memoing, user studies.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-head"><h3>Technical</h3></div>
+            <p>C, C++, Java, Python, JavaScript, MATLAB. 850+ problems solved on <a href="https://codeforces.com/profile/risvy">Codeforces</a>, <a href="https://leetcode.com/risvy/">LeetCode</a>, and <a href="https://vjudge.net/user/risvy">VJudge</a>.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="news">
         <div class="spread section-head"><h2 class="label margin">News</h2></div>
           <ol class="list">
             <li class="row">
               <p class="margin meta"><time datetime="2026-06">June 2026</time></p>
-              <div class="main">
+              <div class="main" data-reveal-group>
                 <p>Our paper &ldquo;Towards Designing for (Dis)Trust in Technologies for Aging&rdquo; was accepted to ACM ASSETS 2026 in Porto, Portugal. <a href="https://arxiv.org/abs/2608.02784">arXiv preprint</a>.</p>
                 <!-- To add photos to a news item, see MAINTENANCE.md. Template:
                 <figure class="plate narrow" data-reveal>
@@ -227,22 +316,22 @@
             </li>
             <li class="row">
               <p class="margin meta"><time datetime="2026-04">April 2026</time></p>
-              <div class="main"><p>Elected as a vice president of the Bangladeshi Graduate Student Association at NJIT.</p></div>
+              <div class="main" data-reveal-group><p>Elected as a vice president of the Bangladeshi Graduate Student Association at NJIT.</p></div>
             </li>
             <li class="row">
               <p class="margin meta"><time datetime="2024-08">August 2024</time></p>
-              <div class="main"><p>Started the Ph.D. program in computer science at NJIT.</p></div>
+              <div class="main" data-reveal-group><p>Started the Ph.D. program in computer science at NJIT.</p></div>
             </li>
             <li class="row">
               <p class="margin meta"><time datetime="2023-03">March 2023</time></p>
-              <div class="main"><p>Graduated with a B.Sc. in computer science and engineering from SUST.</p></div>
+              <div class="main" data-reveal-group><p>Graduated with a B.Sc. in computer science and engineering from SUST.</p></div>
             </li>
           </ol>
       </section>
 
       <section class="section spread" id="awards">
         <div class="margin"><h2 class="label">Recognition</h2></div>
-        <div class="main">
+        <div class="main" data-reveal-group>
           <ul class="facts">
             <li><span>Finalist, Blockchain Olympiad Bangladesh</span> <span class="meta">2021 and 2022</span></li>
           </ul>
@@ -255,10 +344,59 @@
         </div>
       </section>
 
+      <section class="section spread" id="activities">
+        <div class="margin"><h2 class="label">Activities</h2></div>
+        <div class="main" data-reveal-group>
+          <ul class="facts">
+            <li class="current"><span>Vice President, Bangladeshi Graduate Student Association at NJIT</span> <span class="meta">since April 2026</span></li>
+            <li><span>Member, Association for Computing Machinery</span> <span class="meta">since July 2026</span></li>
+            <li><span>Treasurer, Bangladeshi Graduate Student Association at NJIT</span> <span class="meta">May 2025 &ndash; April 2026</span></li>
+            <li><span>HackNSU, North South University: led a team designing a house-rental business model</span> <span class="meta">2019</span></li>
+            <li><span>National Hackathon, Leading University: built a course management app for teachers and students</span> <span class="meta">2019</span></li>
+            <li><span>Soccer champion (2019) and runners-up (2022), Intra IICT Tournament, SUST</span> <span class="meta">2019, 2022</span></li>
+            <li><span>Table tennis runners-up, intra-department tournament, SUST</span> <span class="meta">2022</span></li>
+            <li><span>Led a high school debate team in district-level competitions</span> <span class="meta"></span></li>
+          </ul>
+          <p class="note" style="margin-top: 1.5rem;">A few photographs of mine were shown at a university exhibition in 2023.</p>
+          <div class="gallery">
+            <figure data-reveal>
+              <a class="lightbox-link" href="/images/exhibition-1.jpg">
+                <img src="/images/exhibition-1.jpg" alt="A bird perched on the bare branches of a tree, silhouetted against a dusk sky" loading="lazy" width="839" height="1200">
+              </a>
+            </figure>
+            <figure data-reveal>
+              <a class="lightbox-link" href="/images/exhibition-2.jpg">
+                <img src="/images/exhibition-2.jpg" alt="The sun setting at the horizon over the sea, viewed from a beach with incoming waves" loading="lazy" width="937" height="1200">
+              </a>
+            </figure>
+            <figure data-reveal>
+              <a class="lightbox-link" href="/images/exhibition-3.jpg">
+                <img src="/images/exhibition-3.jpg" alt="Smooth stones beneath the clear water of a river, with a pebbled bank and forested hills in the distance" loading="lazy" width="1200" height="864">
+              </a>
+            </figure>
+            <figure data-reveal>
+              <a class="lightbox-link" href="/images/exhibition-4.jpg">
+                <img src="/images/exhibition-4.jpg" alt="Waves washing onto a beach at dusk, with the afterglow of sunset reflected on the wet sand" loading="lazy" width="1200" height="900">
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section spread" id="cv">
+        <div class="margin"><h2 class="label">CV</h2></div>
+        <div class="main" data-reveal-group>
+          <p class="actions">
+            <a href="/files/CV_Muhid_Hassan_Risvy.pdf" download="CV_Muhid_Hassan_Risvy.pdf">Download PDF</a>
+            <a href="/files/CV_Muhid_Hassan_Risvy.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+            <span class="meta">Updated October 2026</span>
+          </p>
+        </div>
+      </section>
 
       <section class="section spread" id="contact">
         <div class="margin"><h2 class="label">Contact</h2></div>
-        <div class="main">
+        <div class="main" data-reveal-group>
           <p class="contact-email"><a href="mailto:mr2229@njit.edu">mr2229@njit.edu</a></p>
           <address class="contact-lines">New Jersey Institute of Technology<br>218 Central Ave, Newark, NJ 07102</address>
           <p class="contact-lines">It is <span data-local-time>daytime</span> in Newark right now.</p>
@@ -272,6 +410,13 @@
       </section>
     </div>
   </main>
+
+  <aside class="news-float" id="news-float" hidden aria-label="Latest news">
+    <p class="news-float-label">Latest <time datetime="2026-06">June 2026</time></p>
+    <p class="news-float-text">Paper accepted to ACM ASSETS 2026, Porto.</p>
+    <p class="news-float-more"><a href="#news">All news</a></p>
+    <button class="news-float-close" type="button" aria-label="Hide news">&times;</button>
+  </aside>
 
   <footer class="colophon note">
     <div class="page">

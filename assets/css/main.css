@@ -995,6 +995,8 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--i
   .js .opening [data-enter], .js .opening-portrait, .js [data-reveal] { opacity: 1; transform: none; clip-path: none; }
   .js .opening-portrait img, .js [data-reveal] img { transform: none; }
   .js .section::before { transform: none; }
+  .js [data-reveal-group] > * { opacity: 1; transform: none; transition: none; }
+  .progress { display: none; }
 }
 
 @media print {
@@ -1005,3 +1007,92 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--i
 .scholar-note { margin: 1.25rem 0 0; color: var(--ink-2); }
 .scholar-note a { color: #1a56b8; text-decoration-color: currentColor; }
 @media (prefers-color-scheme: dark) { .scholar-note a { color: #7aa7ee; } }
+
+/* Collapsible marker on section toggles */
+.textlink[data-show]::before,
+.textlink[data-toggle]::before {
+  content: "";
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.55em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.2em) rotate(-45deg);
+  transition: transform 0.3s var(--ease);
+}
+.textlink[data-show][aria-expanded="true"]::before,
+.textlink[data-toggle][aria-expanded="true"]::before { transform: translateY(-0.35em) rotate(45deg); }
+.textlink.copy::before { content: none; }
+.paper-authors .me { font-weight: 600; }
+
+/* Staggered reveal of section content */
+.js [data-reveal-group] > * {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.js [data-reveal-group].in > * { opacity: 1; transform: none; }
+
+/* Reading progress hairline under the masthead */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--accent);
+  transform-origin: left center;
+  transform: scaleX(0);
+  z-index: 40;
+  pointer-events: none;
+}
+
+/* Findings section, shown on request */
+.findings[hidden] { display: none; }
+
+/* Small news panel after the opening */
+.news-float {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 20;
+  width: 17rem;
+  padding: 0.85rem 2.25rem 0.9rem 1.1rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-left: 2px solid var(--accent);
+  border-radius: 2px;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateX(1.5rem);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.news-float.is-visible { opacity: 1; transform: none; }
+.news-float p { margin: 0; }
+.news-float-label {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--ink-3);
+  margin: 0 0 0.3rem !important;
+}
+.news-float-label time { color: var(--ink-2); }
+.news-float-more { margin-top: 0.35rem !important; font-family: var(--sans); font-size: 0.875rem; }
+.news-float-more a { color: var(--ink-2); }
+.news-float-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0;
+  background: none;
+  color: var(--ink-3);
+  font: 1.25rem/1 var(--sans);
+  cursor: pointer;
+}
+.news-float-close:hover { color: var(--ink); }
+@media (max-width: 899px), print { .news-float { display: none; } }
+@media (prefers-reduced-motion: reduce) { .news-float { transition: none; transform: none; } }
