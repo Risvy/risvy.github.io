@@ -215,37 +215,39 @@
     });
   });
 
-  /* Small news panel once the reader has scrolled past the opening */
+  /* Small news panel: shown between the opening and the last screen */
   var newsFloat = $("#news-float");
   var opening = $(".opening");
-  if (newsFloat && opening && "IntersectionObserver" in window) {
+  if (newsFloat && opening) {
     var dismissed = false;
     try { dismissed = window.sessionStorage.getItem("news-float") === "hidden"; } catch (err) { dismissed = false; }
+    var newsShown = false;
     var showNews = function (show) {
       if (dismissed) show = false;
+      if (show === newsShown) return;
+      newsShown = show;
       if (show) {
-        if (newsFloat.hasAttribute("hidden")) {
-          newsFloat.removeAttribute("hidden");
-          window.requestAnimationFrame(function () { newsFloat.classList.add("is-visible"); });
-        } else {
-          newsFloat.classList.add("is-visible");
-        }
+        newsFloat.removeAttribute("hidden");
+        window.requestAnimationFrame(function () { newsFloat.classList.add("is-visible"); });
       } else {
         newsFloat.classList.remove("is-visible");
       }
     };
-    new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        showNews(!entry.isIntersecting && entry.boundingClientRect.top < 0);
-      });
-    }, { threshold: 0 }).observe(opening);
+    var checkNews = function () {
+      var y = window.scrollY;
+      var vh = window.innerHeight;
+      var pastOpening = y > opening.offsetTop + opening.offsetHeight - vh * 0.5;
+      var nearEnd = y + vh > root.scrollHeight - vh * 0.75;
+      showNews(pastOpening && !nearEnd);
+    };
+    checkNews();
+    window.addEventListener("scroll", checkNews, { passive: true });
+    window.addEventListener("resize", checkNews);
+    window.addEventListener("load", checkNews);
     $(".news-float-close", newsFloat).addEventListener("click", function () {
       dismissed = true;
       try { window.sessionStorage.setItem("news-float", "hidden"); } catch (err) { /* ignore */ }
       showNews(false);
-    });
-    newsFloat.addEventListener("click", function (e) {
-      if (e.target.closest('a[href="#news"]')) showNews(false);
     });
   }
 
