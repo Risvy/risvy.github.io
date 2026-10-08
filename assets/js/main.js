@@ -223,27 +223,22 @@
     try { dismissed = window.sessionStorage.getItem("news-float") === "hidden"; } catch (err) { dismissed = false; }
     var showNews = function (show) {
       if (dismissed) show = false;
-      if (show && newsFloat.hasAttribute("hidden")) {
-        newsFloat.removeAttribute("hidden");
-        window.requestAnimationFrame(function () { newsFloat.classList.add("is-visible"); });
-      } else if (!show) {
+      if (show) {
+        if (newsFloat.hasAttribute("hidden")) {
+          newsFloat.removeAttribute("hidden");
+          window.requestAnimationFrame(function () { newsFloat.classList.add("is-visible"); });
+        } else {
+          newsFloat.classList.add("is-visible");
+        }
+      } else {
         newsFloat.classList.remove("is-visible");
       }
     };
-    var pastOpening = false, newsOnScreen = false;
-    var updateNews = function () { showNews(pastOpening && !newsOnScreen); };
     new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        pastOpening = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-        updateNews();
+        showNews(!entry.isIntersecting && entry.boundingClientRect.top < 0);
       });
     }, { threshold: 0 }).observe(opening);
-    var newsSection = $("#news");
-    if (newsSection) {
-      new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) { newsOnScreen = entry.isIntersecting; updateNews(); });
-      }, { threshold: 0.1 }).observe(newsSection);
-    }
     $(".news-float-close", newsFloat).addEventListener("click", function () {
       dismissed = true;
       try { window.sessionStorage.setItem("news-float", "hidden"); } catch (err) { /* ignore */ }
