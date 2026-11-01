@@ -12,6 +12,7 @@
   --rule-2: #c8c8c5;
   --accent: #1f4d3a;
   --accent-2: #2f6b52;
+  --link: #1d4f91;
   --serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -34,6 +35,7 @@
     --rule-2: #3a3d42;
     --accent: #8fc2a6;
     --accent-2: #a9d4bb;
+    --link: #8db8e8;
     color-scheme: dark;
   }
 }
@@ -87,6 +89,13 @@ a:hover {
   color: var(--accent);
   text-decoration-color: currentColor;
 }
+
+/* A linked paper title in running text: shown as a link at rest */
+a.paper-link {
+  color: var(--link);
+  text-decoration-color: color-mix(in srgb, var(--link) 45%, transparent);
+}
+a.paper-link:hover { color: var(--link); text-decoration-color: currentColor; }
 
 :focus-visible {
   outline: 2px solid var(--accent);
